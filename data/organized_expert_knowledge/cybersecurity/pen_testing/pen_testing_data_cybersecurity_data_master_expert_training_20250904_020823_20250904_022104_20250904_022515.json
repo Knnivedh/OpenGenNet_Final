@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "main_category": "cybersecurity",
+    "subcategory": "pen_testing",
+    "source_file": "cybersecurity_data_master_expert_training_20250904_020823_20250904_022104",
+    "processed_at": "2025-09-04T02:25:15.992816",
+    "total_cases": 1,
+    "specialization": "cybersecurity - pen_testing specialist knowledge"
+  },
+  "expert_cases": [
+    {
+      "title": "Deep Dive: Cryptographic Implementation and PKI",
+      "content": "Modern cryptography relies on mathematical complexity: symmetric algorithms (AES, ChaCha20), asymmetric algorithms (RSA, ECC), hash functions (SHA-256, SHA-3). PKI (Public Key Infrastructure) manages digital certificates throughout their lifecycle. Certificate authorities (CAs) issue and revoke certificates. OCSP provides real-time certificate status. Perfect Forward Secrecy (PFS) ensures session key compromise doesn't affect past communications. Quantum-resistant algorithms prepare for post-quantum cryptography.\n\nExpert Insight: In production environments, this requires careful planning and testing phases.\n\nCase Study: A Fortune 500 company implemented this solution, resulting in 40% improved performance.\n\nTechnical Details: Configuration parameters should be tuned based on network size and traffic patterns.",
+      "technology": "Cryptography",
+      "level": "master",
+      "case_id": "CYBERSECURITY_EXPERT_001_1756931903",
+      "category": "cybersecurity_expert",
+      "expert_level": "master",
+      "quality_score": 97,
+      "confidence": 92,
+      "content_length": 820,
+      "source_type": "expert_template_variation",
+      "created_at": "2025-09-04T02:08:23.043924",
+      "variation_id": 1
+    }
+  ]
+}

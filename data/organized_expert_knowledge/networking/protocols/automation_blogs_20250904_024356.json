@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "category": "networking",
+    "subcategory": "protocols",
+    "processed_at": "2025-09-04T02:43:56.661752",
+    "total_cases": 1,
+    "specialization": "Networking protocols expert knowledge"
+  },
+  "expert_cases": [
+    {
+      "title": "Network Automation with Python and APIs",
+      "content": "Network automation transforms operations efficiency. Use Python with libraries like Netmiko, NAPALM, and Nornir for device management. REST APIs provide standardized interfaces, while NETCONF offers structured configuration management.\n\nAutomation Insight: Start small with simple tasks and build up to complex orchestration workflows.\n\nValidation: Always validate configurations before applying - automation amplifies both successes and failures.",
+      "blog_type": "automation_guide",
+      "author_level": "expert",
+      "technologies": [
+        "Python",
+        "Network Automation",
+        "APIs"
+      ],
+      "quality_score": 95,
+      "community": "NetworkAutomation",
+      "case_id": "NET_BLOG_005"
+    }
+  ]
+}

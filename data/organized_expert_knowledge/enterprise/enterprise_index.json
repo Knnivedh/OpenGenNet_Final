@@ -1,0 +1,26 @@
+{
+  "category_index": {
+    "category": "enterprise",
+    "created_at": "2025-09-04T02:25:16.055558",
+    "total_subcategories": 4,
+    "subcategories": {
+      "architecture": {
+        "files": 0,
+        "total_cases": 0
+      },
+      "governance": {
+        "files": 0,
+        "total_cases": 0
+      },
+      "infrastructure": {
+        "files": 0,
+        "total_cases": 0
+      },
+      "strategy": {
+        "files": 0,
+        "total_cases": 0
+      }
+    },
+    "description": "Expert knowledge index for enterprise category"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "category": "networking",
+    "subcategory": "security",
+    "processed_at": "2025-09-04T02:43:56.699354",
+    "total_cases": 1,
+    "specialization": "Networking security expert knowledge"
+  },
+  "expert_cases": [
+    {
+      "title": "VLAN Segmentation Strategy for Security",
+      "content": "Proper VLAN segmentation is fundamental for network security. Implement micro-segmentation with dynamic VLANs, use 802.1X for authentication-based VLAN assignment, and deploy private VLANs for additional isolation.\n\nSecurity Focus: VLANs are your first line of defense - design them with security as the primary concern.\n\nImplementation: Consider VLAN scalability limits and plan for future growth.",
+      "blog_type": "security_focused",
+      "author_level": "expert",
+      "technologies": [
+        "VLAN",
+        "Network Security",
+        "802.1X"
+      ],
+      "quality_score": 93,
+      "community": "NetworkSecurity",
+      "case_id": "NET_BLOG_003"
+    }
+  ]
+}

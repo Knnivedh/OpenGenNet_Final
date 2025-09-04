@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "category": "cybersecurity",
+    "subcategory": "threat_intel",
+    "processed_at": "2025-09-04T02:43:56.919723",
+    "total_cases": 1,
+    "specialization": "Cybersecurity threat_intel expert knowledge"
+  },
+  "expert_cases": [
+    {
+      "threat_id": "TI-APT-2023-001",
+      "threat_name": "Advanced Persistent Threat - Network Infrastructure",
+      "threat_actor": "Nation-State Group Alpha",
+      "sophistication_level": "Advanced",
+      "target_sectors": [
+        "Critical Infrastructure",
+        "Government",
+        "Energy"
+      ],
+      "attack_description": "Multi-stage attack targeting network infrastructure through supply chain compromise. Attackers embed malicious firmware in networking equipment during manufacturing process, enabling persistent access to target networks.\n\nTTP Analysis: Uses legitimate network protocols for command and control, making detection extremely difficult.\n\nAttribution: Linked to previous campaigns through code similarities and infrastructure overlap.",
+      "iocs": [
+        {
+          "type": "ip_address",
+          "value": "192.168.100.45",
+          "description": "Command and control server"
+        },
+        {
+          "type": "domain",
+          "value": "network-update.example.com",
+          "description": "Malicious firmware update domain"
+        }
+      ],
+      "mitigation_strategies": [
+        "Implement firmware integrity checking",
+        "Deploy network behavior monitoring",
+        "Establish vendor trust verification",
+        "Monitor for unusual network traffic patterns"
+      ],
+      "expert_assessment": "Highly sophisticated threat requiring advanced detection capabilities and supply chain security measures.",
+      "confidence_level": "High",
+      "case_id": "TI_001"
+    }
+  ]
+}

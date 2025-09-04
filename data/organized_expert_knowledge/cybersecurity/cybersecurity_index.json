@@ -1,0 +1,30 @@
+{
+  "category_index": {
+    "category": "cybersecurity",
+    "created_at": "2025-09-04T02:25:16.041629",
+    "total_subcategories": 5,
+    "subcategories": {
+      "compliance": {
+        "files": 1,
+        "total_cases": 1
+      },
+      "forensics": {
+        "files": 0,
+        "total_cases": 0
+      },
+      "incident_response": {
+        "files": 1,
+        "total_cases": 29
+      },
+      "pen_testing": {
+        "files": 2,
+        "total_cases": 2
+      },
+      "threat_intel": {
+        "files": 1,
+        "total_cases": 14
+      }
+    },
+    "description": "Expert knowledge index for cybersecurity category"
+  }
+}

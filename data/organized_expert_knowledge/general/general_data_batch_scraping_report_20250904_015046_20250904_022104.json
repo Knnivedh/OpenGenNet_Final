@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "category": "general",
+    "source_file": "batch_scraping_report_20250904_015046",
+    "processed_at": "2025-09-04T02:21:04.948494",
+    "total_cases": 1,
+    "organization_system": "OpenGenNet AI Expert Knowledge Organizer"
+  },
+  "expert_cases": [
+    {
+      "batch_scraping_session": {
+        "timestamp": "20250904_015046",
+        "total_categories": 4,
+        "total_articles_scraped": 11,
+        "total_content_chars": 154902,
+        "total_expert_cases": 11,
+        "categories_breakdown": {
+          "networking_tutorials": {
+            "articles_count": 4,
+            "total_content": 32133,
+            "avg_content_length": 8033
+          },
+          "community_networking": {
+            "articles_count": 0,
+            "total_content": 0,
+            "avg_content_length": 0
+          },
+          "study_resources": {
+            "articles_count": 2,
+            "total_content": 14129,
+            "avg_content_length": 7064
+          },
+          "cybersecurity_resources": {
+            "articles_count": 5,
+            "total_content": 108640,
+            "avg_content_length": 21728
+          }
+        }
+      },
+      "quality_metrics": {
+        "avg_content_length": 14082,
+        "unique_technologies": 3,
+        "expert_level_distribution": {
+          "intermediate": 10,
+          "advanced": 1
+        }
+      }
+    }
+  ]
+}

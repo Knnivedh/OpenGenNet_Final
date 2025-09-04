@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "category": "cisco_networking",
+    "source_type": "vendor_documentation",
+    "scraped_at": "2025-09-04T01:53:58.937180",
+    "total_documents": 2,
+    "scraper_version": "vendor_v1.0"
+  },
+  "content": [
+    {
+      "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_bgp/configuration/xe-16/irg-xe-16-book/configuring-a-basic-bgp-network.html",
+      "title": "Cisco BGP Configuration Guide",
+      "content": "Read Me First Cisco BGP Overview BGP 4 Configuring a Basic BGP Network BGP 4 Soft Configuration BGP Support for 4-byte ASN IPv6 Routing: Multiprotocol BGP Extensions for IPv6 IPv6 Routing: Multiprotocol BGP Link-Local Address Peering IPv6 Multicast Address Family Support for Multiprotocol BGP Configuring Multiprotocol BGP (MP-BGP) Support for CLNS BGP IPv6 Admin Distance Connecting to a Service Provider Using External BGP BGP Route-Map Continue BGP Route-Map Continue Support for Outbound Policy Removing Private AS Numbers from the AS Path in BGP Configuring BGP Neighbor Session Options BGP Neighbor Policy BGP Dynamic Neighbors BGP Support for Next-Hop Address Tracking BGP Restart Neighbor Session After Max-Prefix Limit Reached BGP Support for Dual AS Configuration for Network AS Migrations Configuring Internal BGP Features BGP VPLS Auto Discovery Support on Route Reflector BGP FlowSpec Route-reflector Support BGP Flow Specification Client BGP NSF Awareness BGP Graceful Restart per Neighbor BGP Support for BFD IPv6 NSF and Graceful Restart for MP-BGP IPv6 Address Family BGP Link Bandwidth Border Gateway Protocol Link-State iBGP Multipath Load Sharing BGP Multipath Load Sharing for Both eBGP and iBGP in an MPLS-VPN Loadsharing IP Packets over More Than Six Parallel Paths BGP Policy Accounting BGP Policy Accounting Output Interface Accounting BGP Cost Community BGP Support for IP Prefix Import from Global Table into a VRF Table BGP Support for IP Prefix Export from a VRF Table into the Global Table BGP per Neighbor SoO Configuration Per-VRF Assignment of BGP Router ID BGP Next Hop Unchanged BGP Support for the L2VPN Address Family BGP Event-Based VPN Import BGP Best External BGP PIC Edge for IP and MPLS-VPN Detecting and Mitigating a BGP Slow Peer Configuring BGP: RT Constrained Route Distribution Configuring a BGP Route Server BGP Diverse Path Using a Diverse-Path Route Reflector BGP Enhanced Route Refresh Configuring BGP Consistency Checker BGP—Origin AS Validation BGP MIB Support BGP 4 MIB Support for Per-Peer Received Routes BGP Support for Nonstop Routing (NSR) with Stateful Switchover (SSO) Using L2VPN VPLS BGP NSR Auto Sense BGP NSR Support for iBGP Peers BGP Graceful Shutdown BGP — mVPN BGP sAFI 129 - IPv4 BGP-MVPN SAFI 129 IPv6 BFD—BGP Multihop Client Support, cBit (IPv4 and IPv6), and Strict Mode BGP Attribute Filter and Enhanced Attribute Error Handling BGP Additional Paths BGP-Multiple Cluster IDs BGP-VPN Distinguisher Attribute BGP-RT and VPN Distinguisher Attribute Rewrite Wildcard VPLS BGP Signaling Multicast VPN BGP Dampening BGP—IPv6 NSR BGP-VRF-Aware Conditional Advertisement BGP—Selective Route Download BGP—Support for iBGP Local-AS eiBGP Multipath for Non-VRF Interfaces (IPv4/IPv6) L3VPN iBGP PE-CE BGP NSR Support for MPLS VPNv4 and VPNv6 Inter-AS Option B BGP-RTC for Legacy PE BGP PBB EVPN Route Reflector Support BGP Monitoring Protocol VRF Aware BGP Translate-Update BGP Support for MTR BGP Accumulated IGP BGP MVPN Source-AS Extended Community Filtering BGP AS-Override Split-Horizon BGP Support for Multiple Sourced Paths Per Redistributed Route Maintenance Function: BGP Routing Protocol",
+      "technology": "BGP",
+      "category": "cisco_networking",
+      "vendor_type": "Cisco",
+      "config_examples": [
+        "router bgp <AS>\n ! AF independent part\n neighbor <ip-address> <command> ! Session config; AF independent \n address-family ipv4 unicast\n  ! AF dependant part\n  neighbor <ip-address> <command> ! Policy config; AF dependant \n  exit-address-family \n address-family ipv4 multicast\n  ! AF dependant part\n  neighbor <ip-address> <command> ! Policy config; AF dependant\n  exit-address-family \n address-family ipv4 unicast vrf <vrf-name>\n  ! VRF specific AS independent commands\n  ! VRF specific AS dependant commands\n  neighbor <ip-address> <command> ! Session config; AF independent\n  neighbor <ip-address> <command> ! Policy config; AF dependant \n  exit-address-family",
+        "router bgp <AS>\n ! AF independent part\n neighbor <ip-address> <command> ! Session config; AF independent \n address-family ipv4 unicast\n  ! AF dependant part\n  neighbor <ip-address> <command> ! Policy config; AF dependant \n  exit-address-family \n address-family ipv4 multicast\n  ! AF dependant part\n  neighbor <ip-address> <command> ! Policy config; AF dependant\n  exit-address-family \n address-family ipv4 unicast vrf <vrf-name>\n  ! VRF specific AS independent commands\n  ! VRF specific AS dependant commands\n  neighbor <ip-address> <command> ! Session config; AF independent\n  neighbor <ip-address> <command> ! Policy config; AF dependant \n  exit-address-family",
+        "router bgp 45000\n router-id 172.17.1.99\n bgp log-neighbor-changes\n neighbor 192.168.1.2 remote-as 40000\n neighbor 192.168.3.2 remote-as 50000\n address-family ipv4 unicast\n  neighbor 192.168.1.2 activate\n  network 172.17.1.0 mask 255.255.255.0\n  exit-address-family\n address-family ipv4 multicast\n  neighbor 192.168.3.2 activate\n  neighbor 192.168.3.2 advertisement-interval 25\n  network 172.16.1.0 mask 255.255.255.0\n  exit-address-family\n address-family ipv4 vrf vpn1\n  neighbor 192.168.3.2 activate\n  network 172.21.1.0 mask 255.255.255.0\n  exit-address-family",
+        "router bgp 45000\n router-id 172.17.1.99\n bgp log-neighbor-changes\n neighbor 192.168.1.2 remote-as 40000\n neighbor 192.168.3.2 remote-as 50000\n address-family ipv4 unicast\n  neighbor 192.168.1.2 activate\n  network 172.17.1.0 mask 255.255.255.0\n  exit-address-family\n address-family ipv4 multicast\n  neighbor 192.168.3.2 activate\n  neighbor 192.168.3.2 advertisement-interval 25\n  network 172.16.1.0 mask 255.255.255.0\n  exit-address-family\n address-family ipv4 vrf vpn1\n  neighbor 192.168.3.2 activate\n  network 172.21.1.0 mask 255.255.255.0\n  exit-address-family",
+        "Device(config-router)# network 10.1.1.0 mask 255.255.255.0"
+      ],
+      "code_blocks": [
+        "router bgp <AS>\n ! AF independent part\n neighbor <ip-address> <command> ! Session config; AF independent \n address-family ipv4 unicast\n  ! AF dependant part\n  neighbor <ip-address> <command> ! Policy config; AF dependant \n  exit-address-family \n address-family ipv4 multicast\n  ! AF dependant part\n  neighbor <ip-address> <command> ! Policy config; AF dependant\n  exit-address-family \n address-family ipv4 unicast vrf <vrf-name>\n  ! VRF specific AS independent commands\n  ! VRF specific AS dependant commands\n  neighbor <ip-address> <command> ! Session config; AF independent\n  neighbor <ip-address> <command> ! Policy config; AF dependant \n  exit-address-family",
+        "router bgp <AS>\n ! AF independent part\n neighbor <ip-address> <command> ! Session config; AF independent \n address-family ipv4 unicast\n  ! AF dependant part\n  neighbor <ip-address> <command> ! Policy config; AF dependant \n  exit-address-family \n address-family ipv4 multicast\n  ! AF dependant part\n  neighbor <ip-address> <command> ! Policy config; AF dependant\n  exit-address-family \n address-family ipv4 unicast vrf <vrf-name>\n  ! VRF specific AS independent commands\n  ! VRF specific AS dependant commands\n  neighbor <ip-address> <command> ! Session config; AF independent\n  neighbor <ip-address> <command> ! Policy config; AF dependant \n  exit-address-family",
+        "router bgp 45000\n router-id 172.17.1.99\n bgp log-neighbor-changes\n neighbor 192.168.1.2 remote-as 40000\n neighbor 192.168.3.2 remote-as 50000\n address-family ipv4 unicast\n  neighbor 192.168.1.2 activate\n  network 172.17.1.0 mask 255.255.255.0\n  exit-address-family\n address-family ipv4 multicast\n  neighbor 192.168.3.2 activate\n  neighbor 192.168.3.2 advertisement-interval 25\n  network 172.16.1.0 mask 255.255.255.0\n  exit-address-family\n address-family ipv4 vrf vpn1\n  neighbor 192.168.3.2 activate\n  network 172.21.1.0 mask 255.255.255.0\n  exit-address-family",
+        "router bgp 45000\n router-id 172.17.1.99\n bgp log-neighbor-changes\n neighbor 192.168.1.2 remote-as 40000\n neighbor 192.168.3.2 remote-as 50000\n address-family ipv4 unicast\n  neighbor 192.168.1.2 activate\n  network 172.17.1.0 mask 255.255.255.0\n  exit-address-family\n address-family ipv4 multicast\n  neighbor 192.168.3.2 activate\n  neighbor 192.168.3.2 advertisement-interval 25\n  network 172.16.1.0 mask 255.255.255.0\n  exit-address-family\n address-family ipv4 vrf vpn1\n  neighbor 192.168.3.2 activate\n  network 172.21.1.0 mask 255.255.255.0\n  exit-address-family",
+        "Received route refresh capability from peer.",
+        "Received route refresh capability from peer.",
+        "template peer-session SESSION-TEMPLATE-ONE \n remote-as 1\n exit peer-session",
+        "template peer-session SESSION-TEMPLATE-ONE \n remote-as 1\n exit peer-session",
+        "Device# configure terminal",
+        "Device# configure terminal"
+      ],
+      "scraped_at": "2025-09-04T01:53:45.726895",
+      "content_length": 3161
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_ospf/configuration/xe-16/iro-xe-16-book/iro-cfg.html",
+      "title": "Cisco OSPF Configuration",
+      "content": "Read Me First Configuring OSPF IPv6 Routing: OSPFv3 IPv6 Routing: OSPFv3 Authentication Support with IPsec OSPFv2 Cryptographic Authentication OSPFv3 External Path Preference Option OSPFv3 Graceful Restart Graceful Shutdown Support for OSPFv3 OSPF Stub Router Advertisement OSPF Update Packet-Pacing Configurable Timers OSPF Sham-Link Support for MPLS VPN OSPF Support for Multi-VRF on CE Routers OSPFv2 Multiarea Adjacency OSPFv2 Autoroute Exclude OSPFv3 Address Families OSPFv3 Authentication Trailer Autoroute Announce and Forwarding Adjacencies For OSPFv3 OSPFv3 Autoroute Exclude OSPFv2 IP FRR Local Microloop Avoidance OSPFv2-OSPF Live-Live OSPF Forwarding Address Suppression in Translated Type-5 LSAs OSPF Inbound Filtering Using Route Maps with a Distribute List OSPFv3 Route Filtering Using Distribute-List OSPF Shortest Path First Throttling OSPF Support for Fast Hello Packets OSPF Incremental SPF OSPF Limit on Number of Redistributed Routes OSPFv3 Fast Convergence: LSA and SPF Throttling OSPFv3 Max-Metric Router LSA OSPF Link-State Advertisement Throttling OSPF Support for Unlimited Software VRFs per PE Router OSPF Area Transit Capability OSPF Per-Interface Link-Local Signaling OSPF Link-State Database Overload Protection OSPF MIB Support of RFC 1850 and Latest Extensions OSPF Enhanced Traffic Statistics TTL Security Support for OSPFv3 on IPv6 Configuring OSPF TTL Security Check and OSPF Graceful Shutdown OSPF Sham-Link MIB Support OSPF SNMP ifIndex Value for Interface ID in Data Fields OSPFv2 Local RIB OSPF Support for Forwarding Adjacencies over MPLS TE Tunnels Enabling OSPFv2 on an Interface Basis OSPF Nonstop Routing OSPFv3 NSR OSPFv2 Loop-Free Alternate Fast Reroute OSPFv3 MIB Prefix Suppression Support for OSPFv3 OSPFv3 VRF-Lite/PE-CE OSPFv3 ABR Type 3 LSA Filtering OSPFv3 Demand Circuit Ignore OSPF IPv4 Remote Loop-Free Alternate IP Fast Reroute OSPFv3 Multiarea Adjacency OSPF Limiting Adjacency Formations",
+      "technology": "OSPF",
+      "category": "cisco_networking",
+      "vendor_type": "Cisco",
+      "config_examples": [
+        "Device(config-router)# network 192.168.129.16 0.0.0.3 area 20",
+        "Device(config-if)# ip ospf message-digest-key 1 md5 23456789",
+        "Device(config-if)# ip ospf authentication message-digest",
+        "Device#(config-if) ip ospf network point-to-multipoint",
+        "Device#(config-router) neighbor 192.168.3.4 cost 180"
+      ],
+      "code_blocks": [
+        "Device# configure terminal",
+        "Device(config)# router ospf 109",
+        "Device(config-router)# network 192.168.129.16 0.0.0.3 area 20",
+        "Device(config-router)# end",
+        "Device# configure terminal",
+        "Device(config)# interface Gigabitethernet 0/0",
+        "Device(config-if)# ip ospf cost 65",
+        "Device(config-if)# ip ospf retransmit-interval 1",
+        "Device(config-if)# ip ospf transmit-delay",
+        "Device(config-if)# ip ospf priority 1"
+      ],
+      "scraped_at": "2025-09-04T01:53:50.447455",
+      "content_length": 1946
+    }
+  ]
+}

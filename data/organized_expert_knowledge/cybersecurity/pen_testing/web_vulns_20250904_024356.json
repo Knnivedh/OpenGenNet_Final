@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "category": "cybersecurity",
+    "subcategory": "pen_testing",
+    "processed_at": "2025-09-04T02:43:56.831370",
+    "total_cases": 1,
+    "specialization": "Cybersecurity pen_testing expert knowledge"
+  },
+  "expert_cases": [
+    {
+      "cve_id": "CVE-2023-WEB-002",
+      "title": "SQL Injection in Web Application Frameworks",
+      "severity": "High",
+      "cvss_score": 8.1,
+      "description": "SQL injection vulnerability in popular web frameworks allows attackers to extract sensitive data from databases. The vulnerability occurs when user input is not properly sanitized before database queries.\n\nExploitation: Can be exploited through web interface with basic SQL injection techniques.\n\nImpact: Complete database compromise including user credentials and sensitive data.",
+      "affected_systems": [
+        "Web Applications",
+        "Database Systems",
+        "E-commerce Platforms"
+      ],
+      "exploit_complexity": "Low",
+      "attack_vector": "Network",
+      "expert_analysis": "Classic SQL injection with modern twist - affects multiple framework versions.",
+      "real_world_impact": "Multiple data breaches traced to this vulnerability",
+      "case_id": "VULN_DB_002"
+    }
+  ]
+}

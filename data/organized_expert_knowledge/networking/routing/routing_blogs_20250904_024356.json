@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "category": "networking",
+    "subcategory": "routing",
+    "processed_at": "2025-09-04T02:43:56.621077",
+    "total_cases": 3,
+    "specialization": "Networking routing expert knowledge"
+  },
+  "expert_cases": [
+    {
+      "title": "BGP Route Optimization in Large-Scale Networks",
+      "content": "In large enterprise networks, BGP route optimization becomes critical for performance. Key strategies include route filtering with prefix-lists, AS-path prepending for traffic engineering, and communities for granular policy control. Real-world implementation requires careful planning of route-maps and understanding of BGP decision process.\n\nExpert Insight: Use BGP communities extensively for policy granularity.\n\nCase Study: Fortune 500 company reduced convergence time by 40% using optimized BGP communities.",
+      "blog_type": "technical_deep_dive",
+      "author_level": "expert",
+      "technologies": [
+        "BGP",
+        "Route Optimization",
+        "Enterprise Networking"
+      ],
+      "quality_score": 94,
+      "community": "NetworkEngineering",
+      "case_id": "NET_BLOG_001"
+    },
+    {
+      "title": "OSPF Area Design Best Practices",
+      "content": "OSPF area design is crucial for network scalability. Area 0 must be contiguous, stub areas reduce LSA flooding, and NSSA areas provide flexible external route control. Hub-and-spoke topologies work well with area design.\n\nExpert Tip: Keep area 0 simple and stable - it's the backbone that everything depends on.\n\nReal Implementation: Service provider redesigned OSPF areas and reduced SPF calculation time by 60%.",
+      "blog_type": "design_guide",
+      "author_level": "expert",
+      "technologies": [
+        "OSPF",
+        "Network Design",
+        "Area Architecture"
+      ],
+      "quality_score": 91,
+      "community": "NetworkArchitects",
+      "case_id": "NET_BLOG_002"
+    },
+    {
+      "title": "SD-WAN Implementation Lessons Learned",
+      "content": "SD-WAN deployment requires careful planning of overlay networks, underlay connectivity, and policy management. Key considerations include bandwidth aggregation, application-aware routing, and centralized policy management.\n\nLessons Learned: Start with pilot sites and gradually expand - SD-WAN complexity can be overwhelming.\n\nBest Practice: Implement comprehensive monitoring from day one.",
+      "blog_type": "implementation_guide",
+      "author_level": "expert",
+      "technologies": [
+        "SD-WAN",
+        "Overlay Networks",
+        "Cloud Connectivity"
+      ],
+      "quality_score": 96,
+      "community": "SD-WAN_Experts",
+      "case_id": "NET_BLOG_004"
+    }
+  ]
+}

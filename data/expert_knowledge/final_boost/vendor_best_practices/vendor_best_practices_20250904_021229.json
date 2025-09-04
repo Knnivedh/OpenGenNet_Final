@@ -1,0 +1,1450 @@
+{
+  "metadata": {
+    "content_type": "vendor_best_practices",
+    "generated_at": "2025-09-04T02:12:29.880121",
+    "total_items": 60,
+    "boost_phase": "final"
+  },
+  "content": [
+    {
+      "vendor": "Cisco",
+      "practice": "Cisco Validated Design for Campus Networks",
+      "description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations.",
+      "technologies": [
+        "Switching",
+        "Routing",
+        "Wireless",
+        "Security"
+      ],
+      "case_id": "VENDOR_CISCO_001",
+      "title": "Cisco Best Practice: Cisco Validated Design for Campus Networks - Implementation 1",
+      "detailed_description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations. Implementation requires careful planning and phased deployment approach.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 98,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869257"
+    },
+    {
+      "vendor": "Cisco",
+      "practice": "Cisco Validated Design for Campus Networks",
+      "description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations.",
+      "technologies": [
+        "Switching",
+        "Routing",
+        "Wireless",
+        "Security"
+      ],
+      "case_id": "VENDOR_CISCO_002",
+      "title": "Cisco Best Practice: Cisco Validated Design for Campus Networks - Implementation 2",
+      "detailed_description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations. Integration with existing infrastructure must be thoroughly tested.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 97,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869270"
+    },
+    {
+      "vendor": "Cisco",
+      "practice": "Cisco Validated Design for Campus Networks",
+      "description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations.",
+      "technologies": [
+        "Switching",
+        "Routing",
+        "Wireless",
+        "Security"
+      ],
+      "case_id": "VENDOR_CISCO_003",
+      "title": "Cisco Best Practice: Cisco Validated Design for Campus Networks - Implementation 3",
+      "detailed_description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations. Training and documentation are essential for operational success.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 92,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869277"
+    },
+    {
+      "vendor": "Cisco",
+      "practice": "Cisco Validated Design for Campus Networks",
+      "description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations.",
+      "technologies": [
+        "Switching",
+        "Routing",
+        "Wireless",
+        "Security"
+      ],
+      "case_id": "VENDOR_CISCO_004",
+      "title": "Cisco Best Practice: Cisco Validated Design for Campus Networks - Implementation 4",
+      "detailed_description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations. Monitoring and maintenance procedures should be established.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 91,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869282"
+    },
+    {
+      "vendor": "Cisco",
+      "practice": "Cisco Validated Design for Campus Networks",
+      "description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations.",
+      "technologies": [
+        "Switching",
+        "Routing",
+        "Wireless",
+        "Security"
+      ],
+      "case_id": "VENDOR_CISCO_005",
+      "title": "Cisco Best Practice: Cisco Validated Design for Campus Networks - Implementation 5",
+      "detailed_description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations. Security considerations must be integrated throughout the design.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 91,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869289"
+    },
+    {
+      "vendor": "Cisco",
+      "practice": "Cisco Validated Design for Campus Networks",
+      "description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations.",
+      "technologies": [
+        "Switching",
+        "Routing",
+        "Wireless",
+        "Security"
+      ],
+      "case_id": "VENDOR_CISCO_006",
+      "title": "Cisco Best Practice: Cisco Validated Design for Campus Networks - Implementation 6",
+      "detailed_description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations. Implementation requires careful planning and phased deployment approach.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 93,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869299"
+    },
+    {
+      "vendor": "Cisco",
+      "practice": "Cisco Validated Design for Campus Networks",
+      "description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations.",
+      "technologies": [
+        "Switching",
+        "Routing",
+        "Wireless",
+        "Security"
+      ],
+      "case_id": "VENDOR_CISCO_007",
+      "title": "Cisco Best Practice: Cisco Validated Design for Campus Networks - Implementation 7",
+      "detailed_description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations. Integration with existing infrastructure must be thoroughly tested.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 90,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869305"
+    },
+    {
+      "vendor": "Cisco",
+      "practice": "Cisco Validated Design for Campus Networks",
+      "description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations.",
+      "technologies": [
+        "Switching",
+        "Routing",
+        "Wireless",
+        "Security"
+      ],
+      "case_id": "VENDOR_CISCO_008",
+      "title": "Cisco Best Practice: Cisco Validated Design for Campus Networks - Implementation 8",
+      "detailed_description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations. Training and documentation are essential for operational success.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 97,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869314"
+    },
+    {
+      "vendor": "Cisco",
+      "practice": "Cisco Validated Design for Campus Networks",
+      "description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations.",
+      "technologies": [
+        "Switching",
+        "Routing",
+        "Wireless",
+        "Security"
+      ],
+      "case_id": "VENDOR_CISCO_009",
+      "title": "Cisco Best Practice: Cisco Validated Design for Campus Networks - Implementation 9",
+      "detailed_description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations. Monitoring and maintenance procedures should be established.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 95,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869322"
+    },
+    {
+      "vendor": "Cisco",
+      "practice": "Cisco Validated Design for Campus Networks",
+      "description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations.",
+      "technologies": [
+        "Switching",
+        "Routing",
+        "Wireless",
+        "Security"
+      ],
+      "case_id": "VENDOR_CISCO_010",
+      "title": "Cisco Best Practice: Cisco Validated Design for Campus Networks - Implementation 10",
+      "detailed_description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations. Security considerations must be integrated throughout the design.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 92,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869328"
+    },
+    {
+      "vendor": "Cisco",
+      "practice": "Cisco Validated Design for Campus Networks",
+      "description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations.",
+      "technologies": [
+        "Switching",
+        "Routing",
+        "Wireless",
+        "Security"
+      ],
+      "case_id": "VENDOR_CISCO_011",
+      "title": "Cisco Best Practice: Cisco Validated Design for Campus Networks - Implementation 11",
+      "detailed_description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations. Implementation requires careful planning and phased deployment approach.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 94,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869335"
+    },
+    {
+      "vendor": "Cisco",
+      "practice": "Cisco Validated Design for Campus Networks",
+      "description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations.",
+      "technologies": [
+        "Switching",
+        "Routing",
+        "Wireless",
+        "Security"
+      ],
+      "case_id": "VENDOR_CISCO_012",
+      "title": "Cisco Best Practice: Cisco Validated Design for Campus Networks - Implementation 12",
+      "detailed_description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations. Integration with existing infrastructure must be thoroughly tested.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 96,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869342"
+    },
+    {
+      "vendor": "Cisco",
+      "practice": "Cisco Validated Design for Campus Networks",
+      "description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations.",
+      "technologies": [
+        "Switching",
+        "Routing",
+        "Wireless",
+        "Security"
+      ],
+      "case_id": "VENDOR_CISCO_013",
+      "title": "Cisco Best Practice: Cisco Validated Design for Campus Networks - Implementation 13",
+      "detailed_description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations. Training and documentation are essential for operational success.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 96,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869349"
+    },
+    {
+      "vendor": "Cisco",
+      "practice": "Cisco Validated Design for Campus Networks",
+      "description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations.",
+      "technologies": [
+        "Switching",
+        "Routing",
+        "Wireless",
+        "Security"
+      ],
+      "case_id": "VENDOR_CISCO_014",
+      "title": "Cisco Best Practice: Cisco Validated Design for Campus Networks - Implementation 14",
+      "detailed_description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations. Monitoring and maintenance procedures should be established.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 92,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869355"
+    },
+    {
+      "vendor": "Cisco",
+      "practice": "Cisco Validated Design for Campus Networks",
+      "description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations.",
+      "technologies": [
+        "Switching",
+        "Routing",
+        "Wireless",
+        "Security"
+      ],
+      "case_id": "VENDOR_CISCO_015",
+      "title": "Cisco Best Practice: Cisco Validated Design for Campus Networks - Implementation 15",
+      "detailed_description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations. Security considerations must be integrated throughout the design.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 94,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869361"
+    },
+    {
+      "vendor": "Cisco",
+      "practice": "Cisco Validated Design for Campus Networks",
+      "description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations.",
+      "technologies": [
+        "Switching",
+        "Routing",
+        "Wireless",
+        "Security"
+      ],
+      "case_id": "VENDOR_CISCO_016",
+      "title": "Cisco Best Practice: Cisco Validated Design for Campus Networks - Implementation 16",
+      "detailed_description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations. Implementation requires careful planning and phased deployment approach.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 91,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869368"
+    },
+    {
+      "vendor": "Cisco",
+      "practice": "Cisco Validated Design for Campus Networks",
+      "description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations.",
+      "technologies": [
+        "Switching",
+        "Routing",
+        "Wireless",
+        "Security"
+      ],
+      "case_id": "VENDOR_CISCO_017",
+      "title": "Cisco Best Practice: Cisco Validated Design for Campus Networks - Implementation 17",
+      "detailed_description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations. Integration with existing infrastructure must be thoroughly tested.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 98,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869374"
+    },
+    {
+      "vendor": "Cisco",
+      "practice": "Cisco Validated Design for Campus Networks",
+      "description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations.",
+      "technologies": [
+        "Switching",
+        "Routing",
+        "Wireless",
+        "Security"
+      ],
+      "case_id": "VENDOR_CISCO_018",
+      "title": "Cisco Best Practice: Cisco Validated Design for Campus Networks - Implementation 18",
+      "detailed_description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations. Training and documentation are essential for operational success.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 96,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869383"
+    },
+    {
+      "vendor": "Cisco",
+      "practice": "Cisco Validated Design for Campus Networks",
+      "description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations.",
+      "technologies": [
+        "Switching",
+        "Routing",
+        "Wireless",
+        "Security"
+      ],
+      "case_id": "VENDOR_CISCO_019",
+      "title": "Cisco Best Practice: Cisco Validated Design for Campus Networks - Implementation 19",
+      "detailed_description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations. Monitoring and maintenance procedures should be established.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 98,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869389"
+    },
+    {
+      "vendor": "Cisco",
+      "practice": "Cisco Validated Design for Campus Networks",
+      "description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations.",
+      "technologies": [
+        "Switching",
+        "Routing",
+        "Wireless",
+        "Security"
+      ],
+      "case_id": "VENDOR_CISCO_020",
+      "title": "Cisco Best Practice: Cisco Validated Design for Campus Networks - Implementation 20",
+      "detailed_description": "Enterprise campus network design following Cisco best practices with hierarchical approach, redundancy, and scalability considerations. Security considerations must be integrated throughout the design.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 97,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869395"
+    },
+    {
+      "vendor": "Juniper",
+      "practice": "Juniper Data Center Reference Architecture",
+      "description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments.",
+      "technologies": [
+        "Data Center",
+        "EVPN",
+        "VXLAN",
+        "Automation"
+      ],
+      "case_id": "VENDOR_JUNIPER_001",
+      "title": "Juniper Best Practice: Juniper Data Center Reference Architecture - Implementation 1",
+      "detailed_description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments. Implementation requires careful planning and phased deployment approach.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 90,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869402"
+    },
+    {
+      "vendor": "Juniper",
+      "practice": "Juniper Data Center Reference Architecture",
+      "description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments.",
+      "technologies": [
+        "Data Center",
+        "EVPN",
+        "VXLAN",
+        "Automation"
+      ],
+      "case_id": "VENDOR_JUNIPER_002",
+      "title": "Juniper Best Practice: Juniper Data Center Reference Architecture - Implementation 2",
+      "detailed_description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments. Integration with existing infrastructure must be thoroughly tested.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 92,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869409"
+    },
+    {
+      "vendor": "Juniper",
+      "practice": "Juniper Data Center Reference Architecture",
+      "description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments.",
+      "technologies": [
+        "Data Center",
+        "EVPN",
+        "VXLAN",
+        "Automation"
+      ],
+      "case_id": "VENDOR_JUNIPER_003",
+      "title": "Juniper Best Practice: Juniper Data Center Reference Architecture - Implementation 3",
+      "detailed_description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments. Training and documentation are essential for operational success.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 91,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869415"
+    },
+    {
+      "vendor": "Juniper",
+      "practice": "Juniper Data Center Reference Architecture",
+      "description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments.",
+      "technologies": [
+        "Data Center",
+        "EVPN",
+        "VXLAN",
+        "Automation"
+      ],
+      "case_id": "VENDOR_JUNIPER_004",
+      "title": "Juniper Best Practice: Juniper Data Center Reference Architecture - Implementation 4",
+      "detailed_description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments. Monitoring and maintenance procedures should be established.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 91,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869422"
+    },
+    {
+      "vendor": "Juniper",
+      "practice": "Juniper Data Center Reference Architecture",
+      "description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments.",
+      "technologies": [
+        "Data Center",
+        "EVPN",
+        "VXLAN",
+        "Automation"
+      ],
+      "case_id": "VENDOR_JUNIPER_005",
+      "title": "Juniper Best Practice: Juniper Data Center Reference Architecture - Implementation 5",
+      "detailed_description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments. Security considerations must be integrated throughout the design.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 98,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869429"
+    },
+    {
+      "vendor": "Juniper",
+      "practice": "Juniper Data Center Reference Architecture",
+      "description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments.",
+      "technologies": [
+        "Data Center",
+        "EVPN",
+        "VXLAN",
+        "Automation"
+      ],
+      "case_id": "VENDOR_JUNIPER_006",
+      "title": "Juniper Best Practice: Juniper Data Center Reference Architecture - Implementation 6",
+      "detailed_description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments. Implementation requires careful planning and phased deployment approach.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 95,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869434"
+    },
+    {
+      "vendor": "Juniper",
+      "practice": "Juniper Data Center Reference Architecture",
+      "description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments.",
+      "technologies": [
+        "Data Center",
+        "EVPN",
+        "VXLAN",
+        "Automation"
+      ],
+      "case_id": "VENDOR_JUNIPER_007",
+      "title": "Juniper Best Practice: Juniper Data Center Reference Architecture - Implementation 7",
+      "detailed_description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments. Integration with existing infrastructure must be thoroughly tested.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 94,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869441"
+    },
+    {
+      "vendor": "Juniper",
+      "practice": "Juniper Data Center Reference Architecture",
+      "description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments.",
+      "technologies": [
+        "Data Center",
+        "EVPN",
+        "VXLAN",
+        "Automation"
+      ],
+      "case_id": "VENDOR_JUNIPER_008",
+      "title": "Juniper Best Practice: Juniper Data Center Reference Architecture - Implementation 8",
+      "detailed_description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments. Training and documentation are essential for operational success.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 92,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869448"
+    },
+    {
+      "vendor": "Juniper",
+      "practice": "Juniper Data Center Reference Architecture",
+      "description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments.",
+      "technologies": [
+        "Data Center",
+        "EVPN",
+        "VXLAN",
+        "Automation"
+      ],
+      "case_id": "VENDOR_JUNIPER_009",
+      "title": "Juniper Best Practice: Juniper Data Center Reference Architecture - Implementation 9",
+      "detailed_description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments. Monitoring and maintenance procedures should be established.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 97,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869453"
+    },
+    {
+      "vendor": "Juniper",
+      "practice": "Juniper Data Center Reference Architecture",
+      "description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments.",
+      "technologies": [
+        "Data Center",
+        "EVPN",
+        "VXLAN",
+        "Automation"
+      ],
+      "case_id": "VENDOR_JUNIPER_010",
+      "title": "Juniper Best Practice: Juniper Data Center Reference Architecture - Implementation 10",
+      "detailed_description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments. Security considerations must be integrated throughout the design.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 92,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869460"
+    },
+    {
+      "vendor": "Juniper",
+      "practice": "Juniper Data Center Reference Architecture",
+      "description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments.",
+      "technologies": [
+        "Data Center",
+        "EVPN",
+        "VXLAN",
+        "Automation"
+      ],
+      "case_id": "VENDOR_JUNIPER_011",
+      "title": "Juniper Best Practice: Juniper Data Center Reference Architecture - Implementation 11",
+      "detailed_description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments. Implementation requires careful planning and phased deployment approach.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 94,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869467"
+    },
+    {
+      "vendor": "Juniper",
+      "practice": "Juniper Data Center Reference Architecture",
+      "description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments.",
+      "technologies": [
+        "Data Center",
+        "EVPN",
+        "VXLAN",
+        "Automation"
+      ],
+      "case_id": "VENDOR_JUNIPER_012",
+      "title": "Juniper Best Practice: Juniper Data Center Reference Architecture - Implementation 12",
+      "detailed_description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments. Integration with existing infrastructure must be thoroughly tested.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 94,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869473"
+    },
+    {
+      "vendor": "Juniper",
+      "practice": "Juniper Data Center Reference Architecture",
+      "description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments.",
+      "technologies": [
+        "Data Center",
+        "EVPN",
+        "VXLAN",
+        "Automation"
+      ],
+      "case_id": "VENDOR_JUNIPER_013",
+      "title": "Juniper Best Practice: Juniper Data Center Reference Architecture - Implementation 13",
+      "detailed_description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments. Training and documentation are essential for operational success.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 94,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869479"
+    },
+    {
+      "vendor": "Juniper",
+      "practice": "Juniper Data Center Reference Architecture",
+      "description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments.",
+      "technologies": [
+        "Data Center",
+        "EVPN",
+        "VXLAN",
+        "Automation"
+      ],
+      "case_id": "VENDOR_JUNIPER_014",
+      "title": "Juniper Best Practice: Juniper Data Center Reference Architecture - Implementation 14",
+      "detailed_description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments. Monitoring and maintenance procedures should be established.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 98,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869486"
+    },
+    {
+      "vendor": "Juniper",
+      "practice": "Juniper Data Center Reference Architecture",
+      "description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments.",
+      "technologies": [
+        "Data Center",
+        "EVPN",
+        "VXLAN",
+        "Automation"
+      ],
+      "case_id": "VENDOR_JUNIPER_015",
+      "title": "Juniper Best Practice: Juniper Data Center Reference Architecture - Implementation 15",
+      "detailed_description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments. Security considerations must be integrated throughout the design.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 97,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869491"
+    },
+    {
+      "vendor": "Juniper",
+      "practice": "Juniper Data Center Reference Architecture",
+      "description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments.",
+      "technologies": [
+        "Data Center",
+        "EVPN",
+        "VXLAN",
+        "Automation"
+      ],
+      "case_id": "VENDOR_JUNIPER_016",
+      "title": "Juniper Best Practice: Juniper Data Center Reference Architecture - Implementation 16",
+      "detailed_description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments. Implementation requires careful planning and phased deployment approach.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 96,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869497"
+    },
+    {
+      "vendor": "Juniper",
+      "practice": "Juniper Data Center Reference Architecture",
+      "description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments.",
+      "technologies": [
+        "Data Center",
+        "EVPN",
+        "VXLAN",
+        "Automation"
+      ],
+      "case_id": "VENDOR_JUNIPER_017",
+      "title": "Juniper Best Practice: Juniper Data Center Reference Architecture - Implementation 17",
+      "detailed_description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments. Integration with existing infrastructure must be thoroughly tested.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 92,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869502"
+    },
+    {
+      "vendor": "Juniper",
+      "practice": "Juniper Data Center Reference Architecture",
+      "description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments.",
+      "technologies": [
+        "Data Center",
+        "EVPN",
+        "VXLAN",
+        "Automation"
+      ],
+      "case_id": "VENDOR_JUNIPER_018",
+      "title": "Juniper Best Practice: Juniper Data Center Reference Architecture - Implementation 18",
+      "detailed_description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments. Training and documentation are essential for operational success.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 97,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869509"
+    },
+    {
+      "vendor": "Juniper",
+      "practice": "Juniper Data Center Reference Architecture",
+      "description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments.",
+      "technologies": [
+        "Data Center",
+        "EVPN",
+        "VXLAN",
+        "Automation"
+      ],
+      "case_id": "VENDOR_JUNIPER_019",
+      "title": "Juniper Best Practice: Juniper Data Center Reference Architecture - Implementation 19",
+      "detailed_description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments. Monitoring and maintenance procedures should be established.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 95,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869515"
+    },
+    {
+      "vendor": "Juniper",
+      "practice": "Juniper Data Center Reference Architecture",
+      "description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments.",
+      "technologies": [
+        "Data Center",
+        "EVPN",
+        "VXLAN",
+        "Automation"
+      ],
+      "case_id": "VENDOR_JUNIPER_020",
+      "title": "Juniper Best Practice: Juniper Data Center Reference Architecture - Implementation 20",
+      "detailed_description": "Modern data center fabric design using Juniper QFX series switches with EVPN-VXLAN overlay for virtualized environments. Security considerations must be integrated throughout the design.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 92,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869521"
+    },
+    {
+      "vendor": "Arista",
+      "practice": "Arista Leaf-Spine Architecture",
+      "description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility.",
+      "technologies": [
+        "Leaf-Spine",
+        "Cloud Networking",
+        "Telemetry",
+        "Automation"
+      ],
+      "case_id": "VENDOR_ARISTA_001",
+      "title": "Arista Best Practice: Arista Leaf-Spine Architecture - Implementation 1",
+      "detailed_description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility. Implementation requires careful planning and phased deployment approach.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 91,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869527"
+    },
+    {
+      "vendor": "Arista",
+      "practice": "Arista Leaf-Spine Architecture",
+      "description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility.",
+      "technologies": [
+        "Leaf-Spine",
+        "Cloud Networking",
+        "Telemetry",
+        "Automation"
+      ],
+      "case_id": "VENDOR_ARISTA_002",
+      "title": "Arista Best Practice: Arista Leaf-Spine Architecture - Implementation 2",
+      "detailed_description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility. Integration with existing infrastructure must be thoroughly tested.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 96,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869533"
+    },
+    {
+      "vendor": "Arista",
+      "practice": "Arista Leaf-Spine Architecture",
+      "description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility.",
+      "technologies": [
+        "Leaf-Spine",
+        "Cloud Networking",
+        "Telemetry",
+        "Automation"
+      ],
+      "case_id": "VENDOR_ARISTA_003",
+      "title": "Arista Best Practice: Arista Leaf-Spine Architecture - Implementation 3",
+      "detailed_description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility. Training and documentation are essential for operational success.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 95,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869539"
+    },
+    {
+      "vendor": "Arista",
+      "practice": "Arista Leaf-Spine Architecture",
+      "description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility.",
+      "technologies": [
+        "Leaf-Spine",
+        "Cloud Networking",
+        "Telemetry",
+        "Automation"
+      ],
+      "case_id": "VENDOR_ARISTA_004",
+      "title": "Arista Best Practice: Arista Leaf-Spine Architecture - Implementation 4",
+      "detailed_description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility. Monitoring and maintenance procedures should be established.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 92,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869545"
+    },
+    {
+      "vendor": "Arista",
+      "practice": "Arista Leaf-Spine Architecture",
+      "description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility.",
+      "technologies": [
+        "Leaf-Spine",
+        "Cloud Networking",
+        "Telemetry",
+        "Automation"
+      ],
+      "case_id": "VENDOR_ARISTA_005",
+      "title": "Arista Best Practice: Arista Leaf-Spine Architecture - Implementation 5",
+      "detailed_description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility. Security considerations must be integrated throughout the design.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 90,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869553"
+    },
+    {
+      "vendor": "Arista",
+      "practice": "Arista Leaf-Spine Architecture",
+      "description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility.",
+      "technologies": [
+        "Leaf-Spine",
+        "Cloud Networking",
+        "Telemetry",
+        "Automation"
+      ],
+      "case_id": "VENDOR_ARISTA_006",
+      "title": "Arista Best Practice: Arista Leaf-Spine Architecture - Implementation 6",
+      "detailed_description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility. Implementation requires careful planning and phased deployment approach.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 95,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869558"
+    },
+    {
+      "vendor": "Arista",
+      "practice": "Arista Leaf-Spine Architecture",
+      "description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility.",
+      "technologies": [
+        "Leaf-Spine",
+        "Cloud Networking",
+        "Telemetry",
+        "Automation"
+      ],
+      "case_id": "VENDOR_ARISTA_007",
+      "title": "Arista Best Practice: Arista Leaf-Spine Architecture - Implementation 7",
+      "detailed_description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility. Integration with existing infrastructure must be thoroughly tested.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 97,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869566"
+    },
+    {
+      "vendor": "Arista",
+      "practice": "Arista Leaf-Spine Architecture",
+      "description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility.",
+      "technologies": [
+        "Leaf-Spine",
+        "Cloud Networking",
+        "Telemetry",
+        "Automation"
+      ],
+      "case_id": "VENDOR_ARISTA_008",
+      "title": "Arista Best Practice: Arista Leaf-Spine Architecture - Implementation 8",
+      "detailed_description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility. Training and documentation are essential for operational success.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 90,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869573"
+    },
+    {
+      "vendor": "Arista",
+      "practice": "Arista Leaf-Spine Architecture",
+      "description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility.",
+      "technologies": [
+        "Leaf-Spine",
+        "Cloud Networking",
+        "Telemetry",
+        "Automation"
+      ],
+      "case_id": "VENDOR_ARISTA_009",
+      "title": "Arista Best Practice: Arista Leaf-Spine Architecture - Implementation 9",
+      "detailed_description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility. Monitoring and maintenance procedures should be established.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 93,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869579"
+    },
+    {
+      "vendor": "Arista",
+      "practice": "Arista Leaf-Spine Architecture",
+      "description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility.",
+      "technologies": [
+        "Leaf-Spine",
+        "Cloud Networking",
+        "Telemetry",
+        "Automation"
+      ],
+      "case_id": "VENDOR_ARISTA_010",
+      "title": "Arista Best Practice: Arista Leaf-Spine Architecture - Implementation 10",
+      "detailed_description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility. Security considerations must be integrated throughout the design.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 94,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869585"
+    },
+    {
+      "vendor": "Arista",
+      "practice": "Arista Leaf-Spine Architecture",
+      "description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility.",
+      "technologies": [
+        "Leaf-Spine",
+        "Cloud Networking",
+        "Telemetry",
+        "Automation"
+      ],
+      "case_id": "VENDOR_ARISTA_011",
+      "title": "Arista Best Practice: Arista Leaf-Spine Architecture - Implementation 11",
+      "detailed_description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility. Implementation requires careful planning and phased deployment approach.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 98,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869591"
+    },
+    {
+      "vendor": "Arista",
+      "practice": "Arista Leaf-Spine Architecture",
+      "description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility.",
+      "technologies": [
+        "Leaf-Spine",
+        "Cloud Networking",
+        "Telemetry",
+        "Automation"
+      ],
+      "case_id": "VENDOR_ARISTA_012",
+      "title": "Arista Best Practice: Arista Leaf-Spine Architecture - Implementation 12",
+      "detailed_description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility. Integration with existing infrastructure must be thoroughly tested.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 95,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869598"
+    },
+    {
+      "vendor": "Arista",
+      "practice": "Arista Leaf-Spine Architecture",
+      "description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility.",
+      "technologies": [
+        "Leaf-Spine",
+        "Cloud Networking",
+        "Telemetry",
+        "Automation"
+      ],
+      "case_id": "VENDOR_ARISTA_013",
+      "title": "Arista Best Practice: Arista Leaf-Spine Architecture - Implementation 13",
+      "detailed_description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility. Training and documentation are essential for operational success.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 94,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869604"
+    },
+    {
+      "vendor": "Arista",
+      "practice": "Arista Leaf-Spine Architecture",
+      "description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility.",
+      "technologies": [
+        "Leaf-Spine",
+        "Cloud Networking",
+        "Telemetry",
+        "Automation"
+      ],
+      "case_id": "VENDOR_ARISTA_014",
+      "title": "Arista Best Practice: Arista Leaf-Spine Architecture - Implementation 14",
+      "detailed_description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility. Monitoring and maintenance procedures should be established.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 95,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869610"
+    },
+    {
+      "vendor": "Arista",
+      "practice": "Arista Leaf-Spine Architecture",
+      "description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility.",
+      "technologies": [
+        "Leaf-Spine",
+        "Cloud Networking",
+        "Telemetry",
+        "Automation"
+      ],
+      "case_id": "VENDOR_ARISTA_015",
+      "title": "Arista Best Practice: Arista Leaf-Spine Architecture - Implementation 15",
+      "detailed_description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility. Security considerations must be integrated throughout the design.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 91,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869616"
+    },
+    {
+      "vendor": "Arista",
+      "practice": "Arista Leaf-Spine Architecture",
+      "description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility.",
+      "technologies": [
+        "Leaf-Spine",
+        "Cloud Networking",
+        "Telemetry",
+        "Automation"
+      ],
+      "case_id": "VENDOR_ARISTA_016",
+      "title": "Arista Best Practice: Arista Leaf-Spine Architecture - Implementation 16",
+      "detailed_description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility. Implementation requires careful planning and phased deployment approach.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 92,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869623"
+    },
+    {
+      "vendor": "Arista",
+      "practice": "Arista Leaf-Spine Architecture",
+      "description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility.",
+      "technologies": [
+        "Leaf-Spine",
+        "Cloud Networking",
+        "Telemetry",
+        "Automation"
+      ],
+      "case_id": "VENDOR_ARISTA_017",
+      "title": "Arista Best Practice: Arista Leaf-Spine Architecture - Implementation 17",
+      "detailed_description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility. Integration with existing infrastructure must be thoroughly tested.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 97,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869628"
+    },
+    {
+      "vendor": "Arista",
+      "practice": "Arista Leaf-Spine Architecture",
+      "description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility.",
+      "technologies": [
+        "Leaf-Spine",
+        "Cloud Networking",
+        "Telemetry",
+        "Automation"
+      ],
+      "case_id": "VENDOR_ARISTA_018",
+      "title": "Arista Best Practice: Arista Leaf-Spine Architecture - Implementation 18",
+      "detailed_description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility. Training and documentation are essential for operational success.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 95,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869635"
+    },
+    {
+      "vendor": "Arista",
+      "practice": "Arista Leaf-Spine Architecture",
+      "description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility.",
+      "technologies": [
+        "Leaf-Spine",
+        "Cloud Networking",
+        "Telemetry",
+        "Automation"
+      ],
+      "case_id": "VENDOR_ARISTA_019",
+      "title": "Arista Best Practice: Arista Leaf-Spine Architecture - Implementation 19",
+      "detailed_description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility. Monitoring and maintenance procedures should be established.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 94,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869642"
+    },
+    {
+      "vendor": "Arista",
+      "practice": "Arista Leaf-Spine Architecture",
+      "description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility.",
+      "technologies": [
+        "Leaf-Spine",
+        "Cloud Networking",
+        "Telemetry",
+        "Automation"
+      ],
+      "case_id": "VENDOR_ARISTA_020",
+      "title": "Arista Best Practice: Arista Leaf-Spine Architecture - Implementation 20",
+      "detailed_description": "Cloud-scale data center networking with Arista CloudVision management and advanced telemetry for network visibility. Security considerations must be integrated throughout the design.",
+      "implementation_steps": [
+        "1. Assessment and planning phase",
+        "2. Design validation and testing",
+        "3. Pilot deployment in controlled environment",
+        "4. Production rollout with change management",
+        "5. Monitoring and optimization phase"
+      ],
+      "quality_score": 91,
+      "expert_level": "master",
+      "created_at": "2025-09-04T02:12:29.869648"
+    }
+  ]
+}

@@ -1,0 +1,1483 @@
+{
+  "metadata": {
+    "name": "Elite AI Accuracy Testing Framework - Complete Suite",
+    "version": "1.0",
+    "created": "2025-08-29T19:20:31.648393",
+    "total_tests": 50,
+    "target_score": 9.0,
+    "description": "Professional validation testing AI against top 1% network engineer standards"
+  },
+  "test_suite": [
+    {
+      "id": 1,
+      "name": "BGP Neighbor Flapping - TCP RST Analysis",
+      "category": "BGP Mastery",
+      "difficulty": "Expert",
+      "query": "BGP neighbor 192.168.1.1 flaps every 90 seconds. tcpdump shows TCP RST packets. Router CPU is normal. What are the top 3 most likely root causes and provide specific troubleshooting commands for Cisco IOS-XR and Juniper?",
+      "golden": {
+        "root_causes": [
+          "MD5 authentication mismatch",
+          "hold timer skew",
+          "TCP MSS/path MTU issues",
+          "firewall state table timeout"
+        ],
+        "commands": [
+          "show bgp neighbors 192.168.1.1",
+          "show tcp brief | include 179",
+          "debug ip tcp packet",
+          "monitor traffic interface"
+        ],
+        "vendors": [
+          "Cisco",
+          "Juniper"
+        ],
+        "keywords": [
+          "MD5",
+          "hold-time",
+          "TCP",
+          "authentication",
+          "MTU"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "BGP Route Reflector Cluster-ID Conflict",
+      "category": "BGP Mastery",
+      "difficulty": "Expert",
+      "query": "BGP route reflector cluster fails after adding new RR. Clients show \"originator-id equals router-id\" error. Explain the issue and provide complete fix for Cisco and Nokia SR OS.",
+      "golden": {
+        "root_causes": [
+          "duplicate cluster-id",
+          "originator-id loop detection",
+          "route reflector client misconfiguration"
+        ],
+        "commands": [
+          "show bgp summary",
+          "show route advertising-protocol bgp",
+          "show bgp cluster-list"
+        ],
+        "vendors": [
+          "Cisco",
+          "Nokia"
+        ],
+        "keywords": [
+          "cluster-id",
+          "route-reflector-client",
+          "originator-id",
+          "loop-prevention"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "BGP AS-PATH Prepending Not Working",
+      "category": "BGP Mastery",
+      "difficulty": "Senior",
+      "query": "Configured AS-PATH prepending 65001 65001 65001 but traffic still prefers unwanted path. BGP best-path shows prepended route as backup. Why is prepending ineffective?",
+      "golden": {
+        "root_causes": [
+          "LOCAL_PREF overrides AS-PATH",
+          "WEIGHT attribute higher priority",
+          "Origin code difference"
+        ],
+        "commands": [
+          "show ip bgp",
+          "show ip bgp bestpath",
+          "show ip bgp attribute-entries"
+        ],
+        "vendors": [
+          "Cisco",
+          "Juniper",
+          "Arista"
+        ],
+        "keywords": [
+          "LOCAL_PREF",
+          "WEIGHT",
+          "bestpath",
+          "decision-process",
+          "origin"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "name": "BGP Add-Path Multi-Vendor Issue",
+      "category": "BGP Mastery",
+      "difficulty": "Expert",
+      "query": "BGP add-path configured between Cisco ASR9000 and Juniper MX but only primary path advertised. Both routers support add-path. What could prevent multiple path advertisement?",
+      "golden": {
+        "root_causes": [
+          "add-path capability mismatch",
+          "maximum-paths configuration",
+          "route-policy filtering"
+        ],
+        "commands": [
+          "show bgp neighbors capabilities",
+          "show bgp paths",
+          "show route-policy"
+        ],
+        "vendors": [
+          "Cisco",
+          "Juniper"
+        ],
+        "keywords": [
+          "add-path",
+          "capability",
+          "maximum-paths",
+          "multipath"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "name": "BGP Memory Prediction Model",
+      "category": "BGP Mastery",
+      "difficulty": "Expert",
+      "query": "BGP table growing at 8% per hour, currently at 85% memory utilization. Predict when memory will hit 95%. What preventive measures can you implement on Cisco and Arista?",
+      "golden": {
+        "root_causes": [
+          "table growth prediction needed",
+          "memory optimization required"
+        ],
+        "commands": [
+          "show ip bgp summary",
+          "show processes memory",
+          "show bgp statistics"
+        ],
+        "vendors": [
+          "Cisco",
+          "Arista"
+        ],
+        "keywords": [
+          "memory",
+          "prediction",
+          "table-growth",
+          "optimization",
+          "soft-reconfiguration"
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "name": "BGP Flowspec DDoS Mitigation",
+      "category": "BGP Mastery",
+      "difficulty": "Expert",
+      "query": "Deploy BGP Flowspec to mitigate 100Gbps DDoS attack targeting TCP port 80. Provide complete configuration for Cisco ASR9000 and Juniper MX with rate limiting.",
+      "golden": {
+        "root_causes": [
+          "DDoS attack mitigation needed"
+        ],
+        "commands": [
+          "show bgp ipv4 flowspec",
+          "show flowspec clients",
+          "show policy-map"
+        ],
+        "vendors": [
+          "Cisco",
+          "Juniper"
+        ],
+        "keywords": [
+          "flowspec",
+          "DDoS",
+          "rate-limit",
+          "destination-port",
+          "action"
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "name": "BGP RPKI Validation Failure",
+      "category": "BGP Mastery",
+      "difficulty": "Senior",
+      "query": "BGP RPKI validation shows \"invalid\" for legitimate customer routes. RPKI cache is updated. What could cause false invalids and how do you troubleshoot?",
+      "golden": {
+        "root_causes": [
+          "ROA mismatch",
+          "AS origin mismatch",
+          "prefix length mismatch"
+        ],
+        "commands": [
+          "show bgp rpki table",
+          "show bgp ipv4 unicast rpki",
+          "show rpki cache-server"
+        ],
+        "vendors": [
+          "Cisco",
+          "Juniper"
+        ],
+        "keywords": [
+          "RPKI",
+          "ROA",
+          "validation",
+          "origin-AS",
+          "prefix-length"
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "name": "BGP Conditional Route Advertisement",
+      "category": "BGP Mastery",
+      "difficulty": "Senior",
+      "query": "Configure BGP to advertise backup route 10.1.1.0/24 only when primary route 10.1.2.0/24 is absent. Provide solution for Cisco and Nokia SR OS.",
+      "golden": {
+        "root_causes": [
+          "conditional advertisement needed"
+        ],
+        "commands": [
+          "show ip bgp conditional-advertisement",
+          "show route-map",
+          "show bgp advertise-map"
+        ],
+        "vendors": [
+          "Cisco",
+          "Nokia"
+        ],
+        "keywords": [
+          "conditional-advertisement",
+          "advertise-map",
+          "exist-map",
+          "non-exist-map"
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "name": "BGP Large Communities Implementation",
+      "category": "BGP Mastery",
+      "difficulty": "Senior",
+      "query": "Implement BGP Large Communities for traffic engineering across 4-byte ASN network. Design community scheme and provide configuration for multi-vendor environment.",
+      "golden": {
+        "root_causes": [
+          "large communities design needed"
+        ],
+        "commands": [
+          "show bgp community",
+          "show bgp large-community",
+          "show route-map"
+        ],
+        "vendors": [
+          "Cisco",
+          "Juniper",
+          "Nokia"
+        ],
+        "keywords": [
+          "large-community",
+          "4-byte-ASN",
+          "traffic-engineering",
+          "route-map"
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "name": "BGP Convergence Optimization",
+      "category": "BGP Mastery",
+      "difficulty": "Expert",
+      "query": "Multi-vendor BGP network (Cisco, Juniper, Nokia, Arista) has 45+ second convergence. Optimize for sub-5 second convergence while maintaining stability.",
+      "golden": {
+        "root_causes": [
+          "BGP timers not optimized",
+          "no BFD integration",
+          "route processing delays"
+        ],
+        "commands": [
+          "show bgp summary",
+          "show bfd neighbors",
+          "show bgp convergence"
+        ],
+        "vendors": [
+          "Cisco",
+          "Juniper",
+          "Nokia",
+          "Arista"
+        ],
+        "keywords": [
+          "BFD",
+          "timers",
+          "fast-external-fallover",
+          "convergence",
+          "optimization"
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "name": "OSPF Adjacency Stuck in ExStart",
+      "category": "OSPF & IS-IS",
+      "difficulty": "Senior",
+      "query": "OSPF adjacency between Area 0 routers stuck in ExStart state. Both routers show different DR/BDR. What are the top causes and how do you fix this?",
+      "golden": {
+        "root_causes": [
+          "MTU mismatch",
+          "duplicate router-id",
+          "hello/dead timer mismatch",
+          "area type mismatch"
+        ],
+        "commands": [
+          "show ip ospf neighbor detail",
+          "show ip ospf interface",
+          "debug ip ospf adj"
+        ],
+        "vendors": [
+          "Cisco",
+          "Juniper"
+        ],
+        "keywords": [
+          "MTU",
+          "router-id",
+          "DR-election",
+          "hello-interval"
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "name": "IS-IS over GRE Tunnel Failure",
+      "category": "OSPF & IS-IS",
+      "difficulty": "Expert",
+      "query": "IS-IS over GRE tunnel fails with \"corrupted LSP packet\" errors. Physical connectivity is good. Provide systematic troubleshooting approach.",
+      "golden": {
+        "root_causes": [
+          "MTU fragmentation",
+          "GRE overhead",
+          "LSP corruption",
+          "tunnel encapsulation issues"
+        ],
+        "commands": [
+          "show isis database",
+          "show interface tunnel",
+          "debug isis packet-errors"
+        ],
+        "vendors": [
+          "Cisco",
+          "Nokia"
+        ],
+        "keywords": [
+          "GRE",
+          "MTU",
+          "LSP",
+          "fragmentation",
+          "overhead"
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "name": "OSPF Type-5 LSA Not Flooding",
+      "category": "OSPF & IS-IS",
+      "difficulty": "Senior",
+      "query": "OSPF Type-5 LSA for external routes not flooding beyond Area 1. ASBR is in Area 0. Area 1 is not a stub. What prevents Type-5 flooding?",
+      "golden": {
+        "root_causes": [
+          "area range filtering",
+          "distribute-list blocking",
+          "ASBR not in area 0",
+          "LSA filtering"
+        ],
+        "commands": [
+          "show ip ospf database external",
+          "show ip ospf border-routers",
+          "show ip ospf area"
+        ],
+        "vendors": [
+          "Cisco",
+          "Juniper"
+        ],
+        "keywords": [
+          "Type-5",
+          "ASBR",
+          "external",
+          "flooding",
+          "area-range"
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "name": "IS-IS Overload Bit Strategy",
+      "category": "OSPF & IS-IS",
+      "difficulty": "Senior",
+      "query": "Design IS-IS overload bit usage strategy for data center spine-leaf. When should overload be used and how does it affect ECMP load balancing?",
+      "golden": {
+        "root_causes": [
+          "overload bit design needed"
+        ],
+        "commands": [
+          "show isis topology",
+          "show isis overload-bit",
+          "show route isis"
+        ],
+        "vendors": [
+          "Cisco",
+          "Arista"
+        ],
+        "keywords": [
+          "overload-bit",
+          "spine-leaf",
+          "ECMP",
+          "maintenance",
+          "graceful-shutdown"
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "name": "OSPFv3 Authentication Failure",
+      "category": "OSPF & IS-IS",
+      "difficulty": "Senior",
+      "query": "OSPFv3 neighbors fail authentication with \"invalid digest\" error. IPv4 OSPF works fine. Provide complete OSPFv3 authentication troubleshooting.",
+      "golden": {
+        "root_causes": [
+          "IPsec configuration mismatch",
+          "SPI mismatch",
+          "authentication key mismatch"
+        ],
+        "commands": [
+          "show ipv6 ospf neighbor",
+          "show crypto ipsec sa",
+          "debug ipv6 ospf hello"
+        ],
+        "vendors": [
+          "Cisco",
+          "Juniper"
+        ],
+        "keywords": [
+          "OSPFv3",
+          "IPsec",
+          "authentication",
+          "SPI",
+          "AH"
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "name": "IS-IS Multi-Topology Convergence",
+      "category": "OSPF & IS-IS",
+      "difficulty": "Expert",
+      "query": "IS-IS multi-topology for IPv4/IPv6 has slow convergence for IPv6 routes only. IPv4 converges normally. Diagnose and optimize IPv6 convergence.",
+      "golden": {
+        "root_causes": [
+          "IPv6 topology separate SPF",
+          "overload conditions",
+          "metric inconsistencies"
+        ],
+        "commands": [
+          "show isis topology ipv6",
+          "show isis spf-log",
+          "show isis metric"
+        ],
+        "vendors": [
+          "Cisco",
+          "Nokia"
+        ],
+        "keywords": [
+          "multi-topology",
+          "IPv6",
+          "SPF",
+          "convergence",
+          "separate-topology"
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "name": "OSPF Area Border Router ABR Issue",
+      "category": "OSPF & IS-IS",
+      "difficulty": "Senior",
+      "query": "OSPF ABR not generating Type-3 LSAs between areas. Router has interfaces in both areas and Area 0 connectivity. What prevents LSA generation?",
+      "golden": {
+        "root_causes": [
+          "area range blocking",
+          "not true ABR",
+          "area 0 partition",
+          "LSA filtering"
+        ],
+        "commands": [
+          "show ip ospf border-routers",
+          "show ip ospf database summary",
+          "show ip ospf area"
+        ],
+        "vendors": [
+          "Cisco",
+          "Juniper"
+        ],
+        "keywords": [
+          "ABR",
+          "Type-3",
+          "area-range",
+          "summary",
+          "backbone"
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "name": "IS-IS Segment Routing Integration",
+      "category": "OSPF & IS-IS",
+      "difficulty": "Expert",
+      "query": "Integrate IS-IS with Segment Routing for traffic engineering. Provide complete configuration for Nokia SR OS including TI-LFA and micro-loop avoidance.",
+      "golden": {
+        "root_causes": [
+          "SR integration needed"
+        ],
+        "commands": [
+          "show isis segment-routing",
+          "show route segment-routing",
+          "show isis adjacency-sid"
+        ],
+        "vendors": [
+          "Nokia",
+          "Cisco"
+        ],
+        "keywords": [
+          "segment-routing",
+          "prefix-SID",
+          "TI-LFA",
+          "micro-loop",
+          "adjacency-SID"
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "name": "EVPN Type-2 Route Missing Diagnosis",
+      "category": "EVPN & VXLAN",
+      "difficulty": "Expert",
+      "query": "EVPN Type-2 route for MAC 00:11:22:33:44:55 missing from BGP table. Host can ping locally but not remote VTEPs. Provide systematic troubleshooting for Cisco Nexus.",
+      "golden": {
+        "root_causes": [
+          "VNI not configured",
+          "RT import/export mismatch",
+          "MAC learning disabled",
+          "VTEP not advertising"
+        ],
+        "commands": [
+          "show bgp l2vpn evpn mac",
+          "show nve peers",
+          "show vxlan address-table"
+        ],
+        "vendors": [
+          "Cisco",
+          "Arista"
+        ],
+        "keywords": [
+          "Type-2",
+          "VNI",
+          "route-target",
+          "VTEP",
+          "MAC-advertisement"
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "name": "EVPN Type-5 Inter-Fabric Routing",
+      "category": "EVPN & VXLAN",
+      "difficulty": "Expert",
+      "query": "EVPN Type-5 routes not providing inter-fabric connectivity. Intra-fabric works. Border leaf configured correctly. What could cause Type-5 blackhole?",
+      "golden": {
+        "root_causes": [
+          "L3VNI not configured",
+          "VRF RT mismatch",
+          "anycast gateway missing",
+          "routing leak issues"
+        ],
+        "commands": [
+          "show bgp l2vpn evpn route-type 5",
+          "show vrf",
+          "show ip route vrf"
+        ],
+        "vendors": [
+          "Cisco",
+          "Arista"
+        ],
+        "keywords": [
+          "Type-5",
+          "L3VNI",
+          "VRF",
+          "inter-fabric",
+          "border-leaf"
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "name": "EVPN Multihoming DF Election Failure",
+      "category": "EVPN & VXLAN",
+      "difficulty": "Expert",
+      "query": "EVPN multihoming with LAG to host. DF election fails causing duplicate traffic. Both PEs advertise Type-1 and Type-4 routes. Diagnose DF algorithm.",
+      "golden": {
+        "root_causes": [
+          "ESI misconfiguration",
+          "DF algorithm mismatch",
+          "Ethernet-segment mismatch"
+        ],
+        "commands": [
+          "show bgp l2vpn evpn route-type 1",
+          "show evpn ethernet-segment",
+          "show evpn df-election"
+        ],
+        "vendors": [
+          "Cisco",
+          "Juniper"
+        ],
+        "keywords": [
+          "multihoming",
+          "DF-election",
+          "ESI",
+          "Type-1",
+          "Type-4"
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "name": "EVPN ARP Suppression Not Working",
+      "category": "EVPN & VXLAN",
+      "difficulty": "Senior",
+      "query": "EVPN ARP suppression configured but BUM traffic still high. ARP table populated on VTEPs. What prevents ARP suppression from working effectively?",
+      "golden": {
+        "root_causes": [
+          "ARP suppression not enabled on all VTEPs",
+          "gratuitous ARP flooding",
+          "proxy-ARP conflicts"
+        ],
+        "commands": [
+          "show vxlan arp-suppression",
+          "show ip arp vxlan",
+          "show vxlan flood"
+        ],
+        "vendors": [
+          "Cisco",
+          "Arista"
+        ],
+        "keywords": [
+          "ARP-suppression",
+          "BUM-traffic",
+          "proxy-ARP",
+          "gratuitous-ARP"
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "name": "EVPN Fabric Migration Cisco to Nokia",
+      "category": "EVPN & VXLAN",
+      "difficulty": "Expert",
+      "query": "Plan migration from Cisco EVPN fabric to Nokia SR OS. Ensure zero downtime during migration. What are key compatibility considerations?",
+      "golden": {
+        "root_causes": [
+          "migration planning needed"
+        ],
+        "commands": [
+          "show bgp evpn route-type",
+          "show service",
+          "show router bgp routes evpn"
+        ],
+        "vendors": [
+          "Cisco",
+          "Nokia"
+        ],
+        "keywords": [
+          "migration",
+          "interoperability",
+          "zero-downtime",
+          "compatibility"
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "name": "EVPN VXLAN MTU Optimization",
+      "category": "EVPN & VXLAN",
+      "difficulty": "Senior",
+      "query": "EVPN VXLAN fabric experiencing fragmentation. Calculate optimal MTU for 9000-byte jumbo frames with double encapsulation scenarios.",
+      "golden": {
+        "root_causes": [
+          "MTU calculation needed",
+          "VXLAN overhead",
+          "double encapsulation"
+        ],
+        "commands": [
+          "show interface mtu",
+          "show vxlan tunnel",
+          "show ip mtu"
+        ],
+        "vendors": [
+          "Cisco",
+          "Arista"
+        ],
+        "keywords": [
+          "MTU",
+          "VXLAN-overhead",
+          "fragmentation",
+          "jumbo-frames",
+          "encapsulation"
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "name": "EVPN IRB Interface Configuration",
+      "category": "EVPN & VXLAN",
+      "difficulty": "Senior",
+      "query": "Configure EVPN IRB for L2/L3 gateway functionality on Juniper QFX. Include anycast gateway and VLAN to VNI mapping with proper VXLAN encapsulation.",
+      "golden": {
+        "root_causes": [
+          "IRB configuration needed"
+        ],
+        "commands": [
+          "show evpn instance",
+          "show bridge-domain",
+          "show interfaces irb"
+        ],
+        "vendors": [
+          "Juniper",
+          "Cisco"
+        ],
+        "keywords": [
+          "IRB",
+          "anycast-gateway",
+          "L2-L3-gateway",
+          "VLAN-VNI-mapping"
+        ]
+      }
+    },
+    {
+      "id": 26,
+      "name": "EVPN Route Distinguisher Conflicts",
+      "category": "EVPN & VXLAN",
+      "difficulty": "Senior",
+      "query": "EVPN deployment has RD conflicts causing route import issues. Multiple VTEPs using same RD format. Design proper RD allocation strategy.",
+      "golden": {
+        "root_causes": [
+          "RD conflicts",
+          "auto-RD overlap",
+          "manual RD duplication"
+        ],
+        "commands": [
+          "show bgp l2vpn evpn rd",
+          "show vxlan vni",
+          "show evpn instance detail"
+        ],
+        "vendors": [
+          "Cisco",
+          "Arista"
+        ],
+        "keywords": [
+          "route-distinguisher",
+          "RD-conflicts",
+          "auto-derivation",
+          "uniqueness"
+        ]
+      }
+    },
+    {
+      "id": 27,
+      "name": "SRv6 Micro-Loop Prevention",
+      "category": "Segment Routing",
+      "difficulty": "Expert",
+      "query": "SRv6 network experiencing micro-loops during IGP convergence causing 50ms packet loss. Implement TI-LFA and other micro-loop prevention mechanisms for Nokia SR OS.",
+      "golden": {
+        "root_causes": [
+          "IGP convergence timing",
+          "lack of TI-LFA",
+          "prefix-SID conflicts"
+        ],
+        "commands": [
+          "show isis database",
+          "show route ipv6",
+          "show segment-routing srv6"
+        ],
+        "vendors": [
+          "Nokia",
+          "Cisco"
+        ],
+        "keywords": [
+          "TI-LFA",
+          "micro-loop",
+          "prefix-SID",
+          "locator",
+          "fast-reroute"
+        ]
+      }
+    },
+    {
+      "id": 28,
+      "name": "SRv6 Flow Label Entropy Missing",
+      "category": "Segment Routing",
+      "difficulty": "Expert",
+      "query": "SRv6 deployment has ECMP polarization due to missing flow label entropy. Traffic not load-balancing across equal-cost paths. Provide solution.",
+      "golden": {
+        "root_causes": [
+          "flow label not set",
+          "entropy calculation missing",
+          "hash algorithm issues"
+        ],
+        "commands": [
+          "show ipv6 route srv6",
+          "show load-balancing",
+          "show segment-routing srv6 locator"
+        ],
+        "vendors": [
+          "Cisco",
+          "Nokia"
+        ],
+        "keywords": [
+          "flow-label",
+          "entropy",
+          "ECMP",
+          "polarization",
+          "load-balancing"
+        ]
+      }
+    },
+    {
+      "id": 29,
+      "name": "SR-MPLS Label Stack Corruption",
+      "category": "Segment Routing",
+      "difficulty": "Expert",
+      "query": "SR-MPLS experiencing label stack corruption at high-speed interfaces (100G). Some packets reach destination, others dropped. Diagnose hardware vs software issue.",
+      "golden": {
+        "root_causes": [
+          "hardware label processing",
+          "MTU exceeded",
+          "label stack depth",
+          "platform limitations"
+        ],
+        "commands": [
+          "show mpls forwarding-table",
+          "show segment-routing mpls",
+          "show platform hardware"
+        ],
+        "vendors": [
+          "Cisco",
+          "Juniper"
+        ],
+        "keywords": [
+          "label-stack",
+          "corruption",
+          "hardware",
+          "platform",
+          "depth-limit"
+        ]
+      }
+    },
+    {
+      "id": 30,
+      "name": "SRv6 TI-LFA Not Protecting Link",
+      "category": "Segment Routing",
+      "difficulty": "Expert",
+      "query": "SRv6 TI-LFA configured but not providing protection for critical link failure. Backup path calculation shows no viable alternate. Fix protection coverage.",
+      "golden": {
+        "root_causes": [
+          "topology constraints",
+          "SID allocation issues",
+          "protection coverage gaps"
+        ],
+        "commands": [
+          "show isis fast-reroute",
+          "show segment-routing srv6 sid",
+          "show route backup"
+        ],
+        "vendors": [
+          "Nokia",
+          "Cisco"
+        ],
+        "keywords": [
+          "TI-LFA",
+          "protection",
+          "backup-path",
+          "topology",
+          "coverage"
+        ]
+      }
+    },
+    {
+      "id": 31,
+      "name": "SRv6 over DMVPN Implementation",
+      "category": "Segment Routing",
+      "difficulty": "Expert",
+      "query": "Deploy SRv6 over DMVPN for branch connectivity. DMVPN phase 3 with spoke-to-spoke tunnels. What are SRv6 encapsulation considerations?",
+      "golden": {
+        "root_causes": [
+          "DMVPN SRv6 compatibility",
+          "encapsulation overhead",
+          "MTU considerations"
+        ],
+        "commands": [
+          "show dmvpn",
+          "show ipv6 route srv6",
+          "show tunnel interface"
+        ],
+        "vendors": [
+          "Cisco"
+        ],
+        "keywords": [
+          "DMVPN",
+          "SRv6",
+          "encapsulation",
+          "spoke-to-spoke",
+          "MTU"
+        ]
+      }
+    },
+    {
+      "id": 32,
+      "name": "SR-TE Policy Optimization",
+      "category": "Segment Routing",
+      "difficulty": "Expert",
+      "query": "Design SR-TE policy for traffic engineering with latency constraints. Require path with <10ms latency and >10Gbps bandwidth. Provide complete configuration.",
+      "golden": {
+        "root_causes": [
+          "traffic engineering requirements"
+        ],
+        "commands": [
+          "show segment-routing traffic-eng policy",
+          "show isis metric",
+          "show mpls traffic-eng tunnels"
+        ],
+        "vendors": [
+          "Cisco",
+          "Nokia"
+        ],
+        "keywords": [
+          "SR-TE",
+          "traffic-engineering",
+          "latency",
+          "bandwidth",
+          "constraints"
+        ]
+      }
+    },
+    {
+      "id": 33,
+      "name": "High-Volume SYN Flood Mitigation",
+      "category": "Security & DDoS",
+      "difficulty": "Expert",
+      "query": "Network under 500K pps SYN flood attack targeting web servers. CPU at 98%, legitimate connections dropping. Provide immediate mitigation for Cisco ASR9000 and Juniper MX.",
+      "golden": {
+        "root_causes": [
+          "TCP SYN flood attack",
+          "insufficient rate limiting",
+          "no DDoS protection"
+        ],
+        "commands": [
+          "show interfaces | include drops",
+          "show policy-map",
+          "monitor traffic interface"
+        ],
+        "vendors": [
+          "Cisco",
+          "Juniper"
+        ],
+        "keywords": [
+          "SYN-flood",
+          "rate-limit",
+          "policer",
+          "DDoS",
+          "TCP-intercept"
+        ]
+      }
+    },
+    {
+      "id": 34,
+      "name": "MACsec MKA Key Server Conflict",
+      "category": "Security & DDoS",
+      "difficulty": "Expert",
+      "query": "MACsec deployment between data centers has MKA key server conflict. Both ends claim to be key server causing connectivity issues. Resolve the conflict.",
+      "golden": {
+        "root_causes": [
+          "MKA key server priority conflict",
+          "MKA protocol issues",
+          "key negotiation failure"
+        ],
+        "commands": [
+          "show macsec interface",
+          "show mka session",
+          "debug mka protocol"
+        ],
+        "vendors": [
+          "Cisco",
+          "Arista"
+        ],
+        "keywords": [
+          "MACsec",
+          "MKA",
+          "key-server",
+          "priority",
+          "negotiation"
+        ]
+      }
+    },
+    {
+      "id": 35,
+      "name": "IPsec VPN NAT-T Troubleshooting",
+      "category": "Security & DDoS",
+      "difficulty": "Senior",
+      "query": "IPsec site-to-site VPN flapping every 30 minutes. Both sites behind NAT. NAT-T enabled but tunnel still unstable. Diagnose NAT traversal issues.",
+      "golden": {
+        "root_causes": [
+          "NAT-T keepalives failing",
+          "UDP 4500 port issues",
+          "NAT mapping timeout"
+        ],
+        "commands": [
+          "show crypto ipsec sa",
+          "show crypto isakmp sa",
+          "debug crypto ipsec"
+        ],
+        "vendors": [
+          "Cisco",
+          "Juniper"
+        ],
+        "keywords": [
+          "IPsec",
+          "NAT-T",
+          "keepalive",
+          "UDP-4500",
+          "mapping-timeout"
+        ]
+      }
+    },
+    {
+      "id": 36,
+      "name": "Zero Trust Network Access Session Drops",
+      "category": "Security & DDoS",
+      "difficulty": "Expert",
+      "query": "ZTNA implementation has frequent session drops for remote users. Authentication successful but application access intermittent. Diagnose ZTNA session management.",
+      "golden": {
+        "root_causes": [
+          "session timeout issues",
+          "policy evaluation problems",
+          "trust score fluctuation"
+        ],
+        "commands": [
+          "show ztna sessions",
+          "show ztna policy",
+          "show ztna trust-score"
+        ],
+        "vendors": [
+          "Cisco",
+          "Palo Alto"
+        ],
+        "keywords": [
+          "ZTNA",
+          "session-timeout",
+          "policy-evaluation",
+          "trust-score",
+          "continuous-verification"
+        ]
+      }
+    },
+    {
+      "id": 37,
+      "name": "Firewall Rule VoIP Optimization",
+      "category": "Security & DDoS",
+      "difficulty": "Senior",
+      "query": "VoIP calls experience poor quality through firewall. RTP streams work but signaling (SIP) has delays. Optimize firewall rules for VoIP without compromising security.",
+      "golden": {
+        "root_causes": [
+          "firewall state table issues",
+          "SIP ALG problems",
+          "RTP port range blocking"
+        ],
+        "commands": [
+          "show firewall session",
+          "show security alg sip",
+          "show security policies"
+        ],
+        "vendors": [
+          "Juniper",
+          "Cisco"
+        ],
+        "keywords": [
+          "VoIP",
+          "SIP-ALG",
+          "RTP",
+          "state-table",
+          "port-range"
+        ]
+      }
+    },
+    {
+      "id": 38,
+      "name": "DNS Amplification Attack Mitigation",
+      "category": "Security & DDoS",
+      "difficulty": "Expert",
+      "query": "ISP network targeted by DNS amplification attack generating 2Tbps traffic. Implement comprehensive mitigation strategy including BCP38 and DNS response rate limiting.",
+      "golden": {
+        "root_causes": [
+          "DNS amplification",
+          "source address spoofing",
+          "open DNS resolvers"
+        ],
+        "commands": [
+          "show ip access-list",
+          "show dns statistics",
+          "show interface rate-limit"
+        ],
+        "vendors": [
+          "Cisco",
+          "Juniper"
+        ],
+        "keywords": [
+          "DNS-amplification",
+          "BCP38",
+          "source-verification",
+          "rate-limiting",
+          "spoofing"
+        ]
+      }
+    },
+    {
+      "id": 39,
+      "name": "AWS Direct Connect BGP MD5 Failure",
+      "category": "Cloud Networking",
+      "difficulty": "Senior",
+      "query": "AWS Direct Connect BGP session fails with MD5 authentication error. Customer router shows correct password configured. AWS console shows different error. Troubleshoot end-to-end.",
+      "golden": {
+        "root_causes": [
+          "MD5 key mismatch",
+          "VLAN configuration error",
+          "BGP timer mismatch"
+        ],
+        "commands": [
+          "show ip bgp neighbors",
+          "show interface description",
+          "debug ip tcp transaction"
+        ],
+        "vendors": [
+          "Cisco",
+          "Juniper",
+          "AWS"
+        ],
+        "keywords": [
+          "Direct-Connect",
+          "MD5",
+          "VLAN",
+          "BGP-session",
+          "authentication"
+        ]
+      }
+    },
+    {
+      "id": 40,
+      "name": "Azure ExpressRoute OpenSent State",
+      "category": "Cloud Networking",
+      "difficulty": "Senior",
+      "query": "Azure ExpressRoute BGP session stuck in OpenSent state. Physical circuit is up. Microsoft shows ready status. What BGP negotiation issue could cause this?",
+      "golden": {
+        "root_causes": [
+          "BGP capability mismatch",
+          "ASN configuration error",
+          "route filter blocking"
+        ],
+        "commands": [
+          "show bgp neighbors capabilities",
+          "show ip bgp summary",
+          "debug ip bgp"
+        ],
+        "vendors": [
+          "Cisco",
+          "Juniper",
+          "Azure"
+        ],
+        "keywords": [
+          "ExpressRoute",
+          "OpenSent",
+          "capability",
+          "ASN",
+          "negotiation"
+        ]
+      }
+    },
+    {
+      "id": 41,
+      "name": "GCP Cloud Router Custom Routes",
+      "category": "Cloud Networking",
+      "difficulty": "Senior",
+      "query": "GCP Cloud Router rejecting custom routes from on-premises. Standard routes work fine. Route advertisements show filtered. What GCP routing policies apply?",
+      "golden": {
+        "root_causes": [
+          "route priority conflicts",
+          "custom route limits",
+          "route policy filtering"
+        ],
+        "commands": [
+          "gcloud compute routes list",
+          "gcloud compute routers describe",
+          "show ip route bgp"
+        ],
+        "vendors": [
+          "GCP",
+          "Cisco"
+        ],
+        "keywords": [
+          "Cloud-Router",
+          "custom-routes",
+          "priority",
+          "filtering",
+          "advertisements"
+        ]
+      }
+    },
+    {
+      "id": 42,
+      "name": "Multi-Cloud BGP over IPsec",
+      "category": "Cloud Networking",
+      "difficulty": "Expert",
+      "query": "BGP over IPsec between AWS and Azure fails intermittently. VPN tunnels stable but BGP sessions flap. Both clouds show tunnel up. Diagnose BGP over IPsec issues.",
+      "golden": {
+        "root_causes": [
+          "MTU/MSS issues",
+          "BGP over IPsec timing",
+          "routing loops",
+          "tunnel endpoint changes"
+        ],
+        "commands": [
+          "show crypto ipsec sa",
+          "show ip bgp neighbors",
+          "show ip mtu"
+        ],
+        "vendors": [
+          "AWS",
+          "Azure",
+          "Cisco"
+        ],
+        "keywords": [
+          "BGP-over-IPsec",
+          "MTU",
+          "MSS",
+          "tunnel",
+          "multi-cloud"
+        ]
+      }
+    },
+    {
+      "id": 43,
+      "name": "SD-WAN Policy Traffic Not Steering",
+      "category": "Cloud Networking",
+      "difficulty": "Senior",
+      "query": "SD-WAN policy configured to steer Office365 traffic to Internet breakout but traffic still goes through MPLS. Policy shows active. Why is steering not working?",
+      "golden": {
+        "root_causes": [
+          "application identification failure",
+          "policy precedence issues",
+          "tunnel preference"
+        ],
+        "commands": [
+          "show sdwan policy",
+          "show sdwan app-route",
+          "show sdwan tunnel statistics"
+        ],
+        "vendors": [
+          "Cisco",
+          "VMware"
+        ],
+        "keywords": [
+          "SD-WAN",
+          "policy",
+          "application-steering",
+          "breakout",
+          "precedence"
+        ]
+      }
+    },
+    {
+      "id": 44,
+      "name": "Hybrid Cloud Network Segmentation",
+      "category": "Cloud Networking",
+      "difficulty": "Expert",
+      "query": "Design network segmentation for hybrid cloud spanning on-premises data center, AWS, and Azure. Implement consistent security policies and micro-segmentation.",
+      "golden": {
+        "root_causes": [
+          "segmentation design needed"
+        ],
+        "commands": [
+          "show vrf",
+          "show security-zone",
+          "show vpc peering"
+        ],
+        "vendors": [
+          "AWS",
+          "Azure",
+          "Cisco"
+        ],
+        "keywords": [
+          "hybrid-cloud",
+          "segmentation",
+          "micro-segmentation",
+          "security-policies",
+          "VRF"
+        ]
+      }
+    },
+    {
+      "id": 45,
+      "name": "Python Netmiko Mass Configuration Backup",
+      "category": "Automation & Code",
+      "difficulty": "Expert",
+      "query": "Write Python script using Netmiko to backup configurations from 500 Cisco switches with parallel execution, proper error handling, logging, and progress tracking. Handle authentication failures gracefully.",
+      "golden": {
+        "root_causes": [
+          "Mass backup automation needed"
+        ],
+        "commands": [
+          "N/A - Code generation"
+        ],
+        "vendors": [
+          "Cisco"
+        ],
+        "keywords": [
+          "Netmiko",
+          "threading",
+          "exception-handling",
+          "logging",
+          "backup",
+          "parallel"
+        ]
+      }
+    },
+    {
+      "id": 46,
+      "name": "Debug Netmiko Connection Timeout",
+      "category": "Automation & Code",
+      "difficulty": "Senior",
+      "query": "Netmiko script fails with \"SSH connection timeout\" for some devices but works for others. Same credentials, same network. Debug and fix the timeout issue.",
+      "golden": {
+        "root_causes": [
+          "SSH timeout configuration",
+          "device processing delays",
+          "network latency"
+        ],
+        "commands": [
+          "show ssh",
+          "show tcp brief"
+        ],
+        "vendors": [
+          "Cisco",
+          "Juniper"
+        ],
+        "keywords": [
+          "Netmiko",
+          "SSH-timeout",
+          "connection",
+          "debugging",
+          "delay-factor"
+        ]
+      }
+    },
+    {
+      "id": 47,
+      "name": "Ansible VLAN Deployment Playbook",
+      "category": "Automation & Code",
+      "difficulty": "Senior",
+      "query": "Create Ansible playbook to deploy VLANs 100-200 across 50 Arista switches with trunk configurations, error handling, and rollback capability if any switch fails.",
+      "golden": {
+        "root_causes": [
+          "VLAN automation needed"
+        ],
+        "commands": [
+          "N/A - Code generation"
+        ],
+        "vendors": [
+          "Arista"
+        ],
+        "keywords": [
+          "Ansible",
+          "VLAN",
+          "trunk",
+          "error-handling",
+          "rollback",
+          "EOS"
+        ]
+      }
+    },
+    {
+      "id": 48,
+      "name": "gNMI Subscription Configuration Error",
+      "category": "Automation & Code",
+      "difficulty": "Expert",
+      "query": "gNMI subscription to Cisco IOS-XR for interface statistics fails with \"path not supported\" error. YANG model shows correct path. Fix the subscription YAML.",
+      "golden": {
+        "root_causes": [
+          "YANG path syntax error",
+          "model version mismatch",
+          "subscription mode incorrect"
+        ],
+        "commands": [
+          "show yang-library",
+          "show grpc",
+          "show telemetry"
+        ],
+        "vendors": [
+          "Cisco"
+        ],
+        "keywords": [
+          "gNMI",
+          "YANG",
+          "subscription",
+          "telemetry",
+          "path-syntax"
+        ]
+      }
+    },
+    {
+      "id": 49,
+      "name": "Terraform Network Infrastructure",
+      "category": "Automation & Code",
+      "difficulty": "Expert",
+      "query": "Convert this CLI configuration to Terraform for automated deployment: BGP neighbor configuration with route-maps, prefix-lists, and AS-path filters on Cisco IOS-XR.",
+      "golden": {
+        "root_causes": [
+          "Infrastructure as Code needed"
+        ],
+        "commands": [
+          "N/A - Code conversion"
+        ],
+        "vendors": [
+          "Cisco"
+        ],
+        "keywords": [
+          "Terraform",
+          "IaC",
+          "BGP",
+          "route-map",
+          "prefix-list",
+          "automation"
+        ]
+      }
+    },
+    {
+      "id": 50,
+      "name": "Network Monitoring API Integration",
+      "category": "Automation & Code",
+      "difficulty": "Expert",
+      "query": "Integrate network monitoring with ServiceNow using REST APIs. Auto-create tickets for BGP neighbor down events with device details, troubleshooting steps, and severity classification.",
+      "golden": {
+        "root_causes": [
+          "API integration needed"
+        ],
+        "commands": [
+          "N/A - API integration"
+        ],
+        "vendors": [
+          "ServiceNow",
+          "Multiple"
+        ],
+        "keywords": [
+          "REST-API",
+          "ServiceNow",
+          "automation",
+          "ticket-creation",
+          "monitoring"
+        ]
+      }
+    }
+  ]
+}
