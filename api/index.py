@@ -267,11 +267,12 @@ def search_knowledge():
 
 @app.route('/')
 def root():
-    """Root endpoint"""
+    """Root endpoint - Enhanced API Ready"""
     return jsonify({
         "service": "OpenGenNet Expert AI Backend",
         "status": "running",
-        "version": "1.0.0",
+        "version": "1.0.1",
+        "enhancement": "deployment_fixed",
         "endpoints": ["/health", "/status", "/ask", "/search", "/debug"],
         "timestamp": datetime.now().isoformat()
     })
