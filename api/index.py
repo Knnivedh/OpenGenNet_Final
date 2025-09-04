@@ -271,8 +271,8 @@ def root():
     return jsonify({
         "service": "OpenGenNet Expert AI Backend",
         "status": "running",
-        "version": "1.0.1",
-        "enhancement": "deployment_fixed",
+        "version": "1.0.2",
+        "enhancement": "root_route_fixed",
         "endpoints": ["/health", "/status", "/ask", "/search", "/debug"],
         "timestamp": datetime.now().isoformat()
     })
