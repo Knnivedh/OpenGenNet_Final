@@ -153,7 +153,19 @@ def search_expert_knowledge(query):
     
     return results[:10]
 
-@app.route('/health', methods=['GET'])
+@app.route('/debug')
+def debug():
+    """Debug endpoint to check environment"""
+    return jsonify({
+        "groq_key_present": bool(GROQ_FAST_KEY),
+        "groq_key_length": len(GROQ_FAST_KEY) if GROQ_FAST_KEY else 0,
+        "deepseek_key_present": bool(DEEPSEEK_KEY),
+        "qwen_key_present": bool(QWEN_KEY),
+        "environment": "vercel",
+        "timestamp": datetime.now().isoformat()
+    })
+
+@app.route('/health')
 def health_check():
     """Health check endpoint"""
     providers_status = {
