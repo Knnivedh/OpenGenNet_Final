@@ -265,6 +265,24 @@ def search_knowledge():
     except Exception as e:
         return jsonify({"error": "Internal server error", "details": str(e)}), 500
 
+@app.route('/')
+def root():
+    """Root endpoint"""
+    return jsonify({
+        "service": "OpenGenNet Expert AI Backend",
+        "status": "running",
+        "version": "1.0.0",
+        "endpoints": ["/health", "/status", "/ask", "/search", "/debug"],
+        "timestamp": datetime.now().isoformat()
+    })
+
+# Handle preflight OPTIONS requests
+@app.route('/ask', methods=['OPTIONS'])
+@app.route('/search', methods=['OPTIONS'])
+def handle_options():
+    """Handle CORS preflight requests"""
+    return '', 200
+
 # For local development
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=PORT, debug=True)
