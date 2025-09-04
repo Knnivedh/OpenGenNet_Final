@@ -1,5 +1,9 @@
 # OpenGenNet Expert AI - Global API Dependencies (Render Optimized)
 
+# Build tools (MUST be first)
+setuptools>=65.0
+wheel
+
 # Core API Framework
 Flask==2.3.3
 Flask-CORS==4.0.0
