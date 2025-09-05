@@ -185,7 +185,7 @@ def health_check():
     return jsonify({
         "service": "OpenGenNet Expert AI Backend",
         "status": "healthy",
-        "version": "1.1.4",
+        "version": "1.2.0",
         "timestamp": datetime.now().isoformat(),
         "providers": sum(providers_status.values()),
         "expert_rag": "simplified",
