@@ -364,6 +364,11 @@ def get_status():
         }
     })
 
+# For Vercel deployment - the app must be accessible at module level
+# This is the standard way for Vercel Python functions
+handler = app
+
+# For local development
 if __name__ == '__main__':
     print(f"🚀 Starting OpenGenNet 2.0 on port {PORT}")
     print(f"📊 Expert Knowledge: {sum(len(topics) for topics in EXPERT_KNOWLEDGE.values())} cases")
