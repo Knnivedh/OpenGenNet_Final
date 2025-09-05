@@ -167,22 +167,32 @@ def debug():
 
 @app.route('/health')
 def health_check():
-    """Health check endpoint"""
+    """Health check endpoint with debug info"""
     providers_status = {
         "groq": bool(GROQ_FAST_KEY),
         "deepseek": bool(DEEPSEEK_KEY),
         "qwen": bool(QWEN_KEY)
     }
+    
+    # Debug environment variables (no sensitive data)
+    env_debug = {
+        'GROQ_FAST_KEY': 'present' if GROQ_FAST_KEY else 'missing',
+        'GROQ_CODING_KEY': 'present' if GROQ_CODING_KEY else 'missing', 
+        'DEEPSEEK_KEY': 'present' if DEEPSEEK_KEY else 'missing',
+        'QWEN_KEY': 'present' if QWEN_KEY else 'missing'
+    }
 
     return jsonify({
         "service": "OpenGenNet Expert AI Backend",
         "status": "healthy",
-        "version": "1.0.0",
+        "version": "1.1.3",
         "timestamp": datetime.now().isoformat(),
         "providers": sum(providers_status.values()),
         "expert_rag": "simplified",
         "platform": "vercel",
-        "python_version": "3.13.5"
+        "python_version": "3.13.5",
+        "env_debug": env_debug,
+        "groq_key_present": bool(GROQ_FAST_KEY)
     })
 
 @app.route('/status', methods=['GET'])
