@@ -91,13 +91,13 @@ def call_ai_api(message, provider="groq"):
                 "Content-Type": "application/json"
             }
             data = {
-                "model": "deepseek-chat",
+                "model": "deepseek/deepseek-r1",  # Updated to working model
                 "messages": [{"role": "user", "content": message}],
                 "temperature": 0.7,
                 "max_tokens": 1024
             }
             response = requests.post(
-                "https://api.deepseek.com/v1/chat/completions",
+                "https://openrouter.ai/api/v1/chat/completions",  # Updated to OpenRouter
                 headers=headers,
                 json=data,
                 timeout=30
@@ -115,7 +115,7 @@ def call_ai_api(message, provider="groq"):
                 "Content-Type": "application/json"
             }
             data = {
-                "model": "qwen/qwen-2-7b-instruct",
+                "model": "qwen/qwen-2.5-72b-instruct",  # Updated to working model
                 "messages": [{"role": "user", "content": message}],
                 "temperature": 0.7,
                 "max_tokens": 1024
@@ -212,6 +212,26 @@ def ask_ai():
             return jsonify({"error": "Missing message parameter"}), 400
         
         message = data['message']
+        use_expert_context = data.get('use_expert_context', True)
+        
+        # Enhance message with expert context if requested
+        enhanced_message = message
+        if use_expert_context:
+            # Search for relevant expert knowledge
+            expert_results = search_expert_knowledge(message)
+            if expert_results:
+                expert_context = "\\n\\nRelevant expert knowledge:\\n"
+                for result in expert_results[:3]:  # Use top 3 results
+                    expert_context += f"- {result['topic']} ({result['category']})\\n"
+                enhanced_message = f"{message}{expert_context}\\nPlease provide a comprehensive answer incorporating this expert knowledge."
+        
+        # Check if any providers are available
+        if not any([GROQ_FAST_KEY, DEEPSEEK_KEY, QWEN_KEY]):
+            return jsonify({
+                "response": "No AI providers available. Please check API keys.",
+                "provider": "none",
+                "timestamp": datetime.now().isoformat()
+            })
         
         # Try providers in order: groq -> deepseek -> qwen
         providers = ["groq", "deepseek", "qwen"]
@@ -221,7 +241,7 @@ def ask_ai():
                (provider == "deepseek" and DEEPSEEK_KEY) or \
                (provider == "qwen" and QWEN_KEY):
                 
-                response = call_ai_api(message, provider)
+                response = call_ai_api(enhanced_message, provider)
                 
                 # Check if response is an error message
                 if not any(error_keyword in response.lower() for error_keyword in 
@@ -229,6 +249,8 @@ def ask_ai():
                     return jsonify({
                         "response": response,
                         "provider": provider,
+                        "enhanced_with_expert_context": use_expert_context and len(expert_results) > 0,
+                        "expert_cases_used": len(expert_results) if use_expert_context else 0,
                         "timestamp": datetime.now().isoformat()
                     })
         
@@ -271,8 +293,8 @@ def root():
     return jsonify({
         "service": "OpenGenNet Expert AI Backend",
         "status": "running",
-        "version": "1.0.2",
-        "enhancement": "root_route_fixed",
+        "version": "1.1.0",
+        "enhancement": "full_ai_providers_activated",
         "endpoints": ["/health", "/status", "/ask", "/search", "/debug"],
         "timestamp": datetime.now().isoformat()
     })
