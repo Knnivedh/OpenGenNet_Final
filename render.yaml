@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: opengennet-2-0
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --bind 0.0.0.0:$PORT api.index:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: GROQ_FAST_KEY
+        sync: false
+      - key: GROQ_CODING_KEY  
+        sync: false
+      - key: DEEPSEEK_KEY
+        sync: false
+      - key: QWEN_KEY
+        sync: false
